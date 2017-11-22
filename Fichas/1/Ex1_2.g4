@@ -10,27 +10,43 @@ grammar Ex1_2;
         import java.util.*;
         }
 
-lista returns[int comp, int contaN, float media]
-@after{if($lista.comp >= 5 && $lista.comp>=10){
+lista returns[int comp, int contaN, float media, int max]
+@after{if($lista.comp >= 5 && $lista.comp<=10){
        System.out.println("Comprimento da lista: "+$lista.comp);
        System.out.println("Quantidade de numeros: "+$lista.contaN);
        System.out.println("Media de numeros: "+$lista.media);
+       System.out.println("Numero maximo: "+$lista.max);
        }
        else System.out.println("Erro: Tamanho tem de ser entre 5 e 10"); 
        }
-      : 'LISTA' elems '.'
-        {$lista.comp=$elems.comp;
-         $lista.contaN=$elems.contaN;
-         $lista.media=(float)$elems.soma/$elems.contaN;}
+      : 'LISTA' elems '.' {
+            $lista.comp=$elems.comp;
+            $lista.contaN=$elems.contaN;
+            $lista.media=(float)$elems.soma/$elems.contaN;
+            $lista.max=$elems.max;
+            }
       ;
 
-elems returns[int comp, int contaN, int soma]
-      : elem {$elems.comp=1;$elems.contaN=$elem.num;$elems.soma=$elem.val;}
-        (',' elem {$elems.comp++;$elems.contaN=$elems.contaN+$elem.num;
-                   $elems.soma=$elems.soma+$elem.val;})* 
+elems returns[int comp, int contaN, int soma, int max]
+    
+@before{
+        $elems.max = Integer.MIN_VALUE;
+}
+    
+      : elem {$elems.comp=1;
+              $elems.contaN=$elem.num;
+              $elems.soma=$elem.val;
+              if($elem.num ==1) $elems.max = $elem.val;
+              }
+        
+        (',' elem {$elems.comp++;
+                   $elems.contaN=$elems.contaN+$elem.num;
+                   $elems.soma=$elems.soma+$elem.val;
+                   if($elem.num ==1 && $elem.val > $elems.max) $elems.max = $elem.val;
+                   })* 
       ;
 
-elem  returns[int num, int val]
+elem  returns[int num, int val, int max]
       : PAL {$elem.num=0;$elem.val=0;}
       | NUM {$elem.num=1;$elem.val=$NUM.int;}
       ;

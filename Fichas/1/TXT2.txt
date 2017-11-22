@@ -1,0 +1,1 @@
+LISTA 1, 2, aa, start, 34, bb, 23, stop, cc.
