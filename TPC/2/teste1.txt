@@ -1,0 +1,19 @@
+Ontologia Automoveis
+conceitos  { pessoa, componente[material:string, preco:float], automovel[preco:float], veiculo[preco:float], meio_de_transporte, membro, pessoa, ser_vivo }  %% pessoa repetido
+individuos { perna, 'fiat 00-TU-99',  pe, Pedro, roda, braco, perna, pe }   %% perna e pe repetidos
+relacoes   { has, owns, has }  %% has repetida
+triplos    {
+  %% descricao relativa ao subdominio meios-de-transporte
+           'fiat 00-TU-99' =iof=> automovel[preco='3500'];
+           automovel =is-a=> veiculo;
+           veiculo =is-a=> meio_de_transporte;
+           roda =iof=> componente[material='borracha', preco='12.23'];
+           automovel =has=> componente;
+  %% descricao relativa aos seres vivos
+           pessoa =owns=> automovel;
+           pessoa =is-a=> ser_vivo;
+           Pedro =iof=> pessoa;
+           Pedro =owns=> 'fiat 00-TU-99';
+           membro =pof=> pessoa;
+           braco =iof=> membro; perna =iof=> membro; pe =iof=> membro;
+           braco =pof=> Pedro }.

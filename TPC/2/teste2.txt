@@ -1,0 +1,21 @@
+Ontologia Automoveis
+conceitos  {componente[material:string], automovel, veiculo, meio_de_transporte, membro, pessoa, ser_vivo }
+individuos { 'fiat 00-TU-99', Pedro, roda, braco, perna, pe }
+relacoes   { has, owns }
+triplos    {
+  %% descricao relativa ao subdominio meios-de-transporte
+           'fiat 00-TU-99' =iff=> automovel;  %% iff
+           automovel =is-a=> veiculo;
+           veiculo =is-a=> meio_de_transporte;
+           roda =iof=> componente[material="borracha"];
+           automovel =has=> componentes;  %%componentes
+  %% descricao relativa aos seres vivos
+           person =owns=> automovel;  %% person
+           pessoa =is-a=> ser_vivo;
+           Joao =iof=> pessoa;  %%joao
+           Pedro =iof=> pessoa;
+           Pedro =owns=> 'fiat 00-TU-99';
+           Cristiana =dona=> 'VW-Polo';  %% cristiana, dona vw-polo
+           membro =pof=> pessoa;
+           braco =iof=> membro; perna =iof=> membro; pe =iof=> membro;
+           braco =pof=> Pedro }.

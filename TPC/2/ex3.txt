@@ -1,0 +1,16 @@
+Ontologia Automoveis
+conceitos {componente[material:string, preco:float], automovel, veiculo, meio-de-transporte, pessoa, ser-vivo }
+individuos { 'fiat_00-TU-99', Pedro, roda, braco, perna, pe }
+relacoes {has, owns, pof}
+triplos  {'fiat_00-TU-99' =iof=> automovel;
+automovel =is-a=> veiculo;
+veiculo =is-a=> meio-de-transporte;
+roda =iof=> componente[material="borracha", preco="12"];
+automovel =has=> componente;
+pessoa =owns=> automovel;
+pessoa =is-a=> ser-vivo;
+Pedro =iof=> pessoa;
+Pedro =owns=> ’fiat_00-TU-99’;
+membro =pof=> pessoa;
+braco =iof=> membro; perna =iof=> membro; pe =iof=> membro;
+braco =pof=> Pedro}.

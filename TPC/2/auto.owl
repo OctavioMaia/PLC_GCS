@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+	<!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+<Ontology>
+<Declaration> 
+ <Class IRI="#componente"/>
+</Declaration>
+<Declaration> 
+ <Class IRI="#automovel"/>
+</Declaration>
+<Declaration> 
+ <Class IRI="#veiculo"/>
+</Declaration>
+<Declaration> 
+ <Class IRI="#meio-de-transporte"/>
+</Declaration>
+<Declaration> 
+ <Class IRI="#pessoa"/>
+</Declaration>
+<Declaration> 
+ <Class IRI="#ser-vivo"/>
+</Declaration>
+<Declaration> 
+ <DataProperty IRI="#material"/>
+</Declaration>
+<Declaration> 
+ <DataProperty IRI="#preco"/>
+</Declaration>
+<Declaration> 
+ <ObjectProperty IRI="#has"/>
+</Declaration>
+<Declaration> 
+ <ObjectProperty IRI="#owns"/>
+</Declaration>
+<Declaration> 
+ <ObjectProperty IRI="#pof"/>
+</Declaration>
+<Declaration> 
+ <NamedIndividual IRI="#'fiat_00-TU-99'"/>
+</Declaration>
+<Declaration> 
+ <NamedIndividual IRI="#Pedro"/>
+</Declaration>
+<Declaration> 
+ <NamedIndividual IRI="#roda"/>
+</Declaration>
+<Declaration> 
+ <NamedIndividual IRI="#braco"/>
+</Declaration>
+<Declaration> 
+ <NamedIndividual IRI="#perna"/>
+</Declaration>
+<Declaration> 
+ <NamedIndividual IRI="#pe"/>
+</Declaration>
+<SubClassOf> 
+ <Class IRI="#automovel"/>
+ <Class IRI="#veiculo"/>
+</SubClassOf>
+<SubClassOf> 
+ <Class IRI="#veiculo"/>
+ <Class IRI="#meio-de-transporte"/>
+</SubClassOf>
+<SubClassOf> 
+ <Class IRI="#pessoa"/>
+ <Class IRI="#ser-vivo"/>
+</SubClassOf>
+<ClassAssertion> 
+ <Class IRI="#automovel"/>
+ <NamedIndividual IRI="#'fiat_00-TU-99'"/>
+</ClassAssertion>
+<ClassAssertion> 
+ <Class IRI="#componente"/>
+ <NamedIndividual IRI="#roda"/>
+</ClassAssertion>
+<ClassAssertion> 
+ <Class IRI="#pessoa"/>
+ <NamedIndividual IRI="#Pedro"/>
+</ClassAssertion>
+<ClassAssertion> 
+ <Class IRI="#membro"/>
+ <NamedIndividual IRI="#braco"/>
+</ClassAssertion>
+<ClassAssertion> 
+ <Class IRI="#membro"/>
+ <NamedIndividual IRI="#perna"/>
+</ClassAssertion>
+<ClassAssertion> 
+ <Class IRI="#membro"/>
+ <NamedIndividual IRI="#pe"/>
+</ClassAssertion>
+<ObjectPropertyAssertion> 
+ <ObjectProperty IRI="#has"/>
+ <NamedIndividual IRI="#automovel"/>
+ <NamedIndividual IRI="#componente"/>
+</ObjectPropertyAssertion>
+<ObjectPropertyAssertion> 
+ <ObjectProperty IRI="#owns"/>
+ <NamedIndividual IRI="#pessoa"/>
+ <NamedIndividual IRI="#automovel"/>
+</ObjectPropertyAssertion>
+<ObjectPropertyAssertion> 
+ <ObjectProperty IRI="#owns"/>
+ <NamedIndividual IRI="#Pedro"/>
+ <NamedIndividual IRI="#'fiat_00-TU-99'"/>
+</ObjectPropertyAssertion>
+<ObjectPropertyAssertion> 
+ <ObjectProperty IRI="#pof"/>
+ <NamedIndividual IRI="#membro"/>
+ <NamedIndividual IRI="#pessoa"/>
+</ObjectPropertyAssertion>
+<ObjectPropertyAssertion> 
+ <ObjectProperty IRI="#pof"/>
+ <NamedIndividual IRI="#braco"/>
+ <NamedIndividual IRI="#Pedro"/>
+</ObjectPropertyAssertion>
+<DataPropertyAssertion> 
+ <DataProperty IRI="#material"/>
+ <NamedIndividual IRI="#roda"/> 
+ <Literal datatypeIRI="&xsd;string">borracha</Literal> 
+</DataPropertyAssertion>
+<DataPropertyAssertion> 
+ <DataProperty IRI="#preco"/>
+ <NamedIndividual IRI="#roda"/> 
+ <Literal datatypeIRI="&xsd;float">12</Literal> 
+</DataPropertyAssertion>
+<ObjectPropertyDomain> 
+ <ObjectProperty IRI="#has"/>
+ <Class IRI="#automovel"/>
+</ObjectPropertyDomain>
+<ObjectPropertyRange> 
+ <ObjectProperty IRI="#has"/>
+ <Class IRI="#componente"/>
+</ObjectPropertyRange>
+<ObjectPropertyDomain> 
+ <ObjectProperty IRI="#owns"/>
+ <Class IRI="#pessoa"/>
+</ObjectPropertyDomain>
+<ObjectPropertyRange> 
+ <ObjectProperty IRI="#owns"/>
+ <Class IRI="#automovel"/>
+</ObjectPropertyRange>
+<ObjectPropertyDomain> 
+ <ObjectProperty IRI="#owns"/>
+ <Class IRI="#Pedro"/>
+</ObjectPropertyDomain>
+<ObjectPropertyRange> 
+ <ObjectProperty IRI="#owns"/>
+ <Class IRI="#'fiat_00-TU-99'"/>
+</ObjectPropertyRange>
+<ObjectPropertyDomain> 
+ <ObjectProperty IRI="#pof"/>
+ <Class IRI="#membro"/>
+</ObjectPropertyDomain>
+<ObjectPropertyRange> 
+ <ObjectProperty IRI="#pof"/>
+ <Class IRI="#pessoa"/>
+</ObjectPropertyRange>
+<ObjectPropertyDomain> 
+ <ObjectProperty IRI="#pof"/>
+ <Class IRI="#braco"/>
+</ObjectPropertyDomain>
+<ObjectPropertyRange> 
+ <ObjectProperty IRI="#pof"/>
+ <Class IRI="#Pedro"/>
+</ObjectPropertyRange>
+<DataPropertyDomain> 
+ <DataProperty IRI="#material"/>
+ <Class IRI="#componente"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#material"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange>
+<DataPropertyDomain> 
+ <DataProperty IRI="#preco"/>
+ <Class IRI="#componente"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#preco"/> 
+ <Datatype abbreviatedIRI="xsd:float"/> 
+</DataPropertyRange>
+</Ontology>
