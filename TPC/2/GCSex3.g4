@@ -34,6 +34,13 @@ grammar GCSex3;
 
 ontologia 
 @after{   
+       owl.add("<?xml version=\"1.0\"?>\n" +
+               "<!DOCTYPE Ontology[\n" +
+               "\t<!ENTITY xsd \"http://www.w3.org/2001/XMLSchema#\">\n" +
+               "\t<!ENTITY xml \"http://www.w3.org/XML/1998/namespace\">\n" +
+               "\t<!ENTITY rdfs \"http://www.w3.org/2000/01/rdf?schema#\">\n" +
+               "\t<!ENTITY rdf \"http://www.w3.org/1999/02/22?rdf?syntax?ns#\">\n" +
+               "]>\n");
        owl.add("<Ontology>");
        owl.addAll(con_owl);
        owl.addAll(mat_owl);
