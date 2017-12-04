@@ -203,6 +203,10 @@ ligacao
                  
              }
         }
+        if(dot.contains("\""+pal1+"\" -> \""+pal2+"\" [ label = \""+ rel1 +"\" ];")){
+           System.out.println("Erro em: "+pal1+" = "+rel1+" => "+ pal2+"\n"+
+                                    "Este triplo já foi adicionado.\n");                                                                          
+        }
         
        dot.add("\""+pal1+"\" -> \""+pal2+"\" [ label = \""+ rel1 +"\" ];");
        if(rel1.equals("is-a")){
