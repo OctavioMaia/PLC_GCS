@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<!DOCTYPE Ontology[
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+	<!ENTITY xml "http://www.w3.org/XML/1998/namespace">
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf?schema#">
+	<!ENTITY rdf "http://www.w3.org/1999/02/22?rdf?syntax?ns#">
+]>
+
+<Ontology>
+<Declaration> 
+ <Class IRI="#Pagela"/>
+</Declaration>
+<Declaration> 
+ <Class IRI="#Pessoa"/>
+</Declaration>
+<Declaration> 
+ <Class IRI="#Santo"/>
+</Declaration>
+<Declaration> 
+ <Class IRI="#Evento"/>
+</Declaration>
+<Declaration> 
+ <Class IRI="#Festa_Religiosa"/>
+</Declaration>
+<Declaration> 
+ <Class IRI="#Batizado"/>
+</Declaration>
+<Declaration> 
+ <Class IRI="#Primeira_Comunhao"/>
+</Declaration>
+<Declaration> 
+ <Class IRI="#Comunhao_Solene"/>
+</Declaration>
+<Declaration> 
+ <Class IRI="#Casamento"/>
+</Declaration>
+<Declaration> 
+ <Class IRI="#Morte"/>
+</Declaration>
+<Declaration> 
+ <DataProperty IRI="#tipo"/>
+</Declaration>
+<Declaration> 
+ <DataProperty IRI="#imagem"/>
+</Declaration>
+<Declaration> 
+ <DataProperty IRI="#conteudo"/>
+</Declaration>
+<Declaration> 
+ <DataProperty IRI="#nome"/>
+</Declaration>
+<Declaration> 
+ <DataProperty IRI="#nome"/>
+</Declaration>
+<Declaration> 
+ <DataProperty IRI="#historia"/>
+</Declaration>
+<Declaration> 
+ <DataProperty IRI="#data"/>
+</Declaration>
+<Declaration> 
+ <DataProperty IRI="#local"/>
+</Declaration>
+<Declaration> 
+ <ObjectProperty IRI="#dedicada"/>
+</Declaration>
+<Declaration> 
+ <ObjectProperty IRI="#recebe"/>
+</Declaration>
+<Declaration> 
+ <ObjectProperty IRI="#oferece"/>
+</Declaration>
+<Declaration> 
+ <ObjectProperty IRI="#associada"/>
+</Declaration>
+<Declaration> 
+ <ObjectProperty IRI="#tem"/>
+</Declaration>
+<SubClassOf> 
+ <Class IRI="#Festa_Religiosa"/>
+ <Class IRI="#Evento"/>
+</SubClassOf>
+<SubClassOf> 
+ <Class IRI="#Batizado"/>
+ <Class IRI="#Evento"/>
+</SubClassOf>
+<SubClassOf> 
+ <Class IRI="#Primeira_Comunhao"/>
+ <Class IRI="#Evento"/>
+</SubClassOf>
+<SubClassOf> 
+ <Class IRI="#Comunhao_Solene"/>
+ <Class IRI="#Evento"/>
+</SubClassOf>
+<SubClassOf> 
+ <Class IRI="#Casamento"/>
+ <Class IRI="#Evento"/>
+</SubClassOf>
+<SubClassOf> 
+ <Class IRI="#Morte"/>
+ <Class IRI="#Evento"/>
+</SubClassOf>
+</Ontology>

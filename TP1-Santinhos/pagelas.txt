@@ -1,21 +1,34 @@
 Ontologia Pagelas
 
-conceitos { Pagela[tipo:string, imagem:byte??, conteudo:string], Pessoa[nome:string],
+conceitos { Pagela[tipo:string, imagem:byte, conteudo:string], Pessoa[nome:string],
             Santo[nome:string, historia:string], Evento[data:dateTime, local:string],
             Festa_Religiosa, Batizado, Primeira_Comunhao, Comunhao_Solene, Casamento, Morte
           }
-individuos { }
+individuos { pag16_1, pag16_2, pag16_3, pag16_4, pag16_5, pag16_6, pag16_7, pag16_8,
+			 pag17, pag18, pag19, pag20, pag21, pag22, pag23, pes16_4,}
 relacoes { dedicada, recebe, oferece, associada, tem }
 triplos {
-          Festa_Religiosa = subclass => Evento;
-          Batizado = subclass => Evento;
-          Primeira_Comunhao = subclass => Evento;
-          Comunhao_Solene = subclass => Evento;
-          Casamento = subclass => Evento;
-          Morte = subclass => Evento;
+          Festa_Religiosa = is-a => Evento;
+          Batizado = is-a => Evento;
+          
+          Comunhao_Solene = is-a => Evento[data='24-05-1931'];
+		  
+		  
+          Casamento = is-a => Evento;
+          Morte = is-a => Evento;
 
           Pessoa = oferece => Pagela;
           Pessoa = recebe => Pagela;
           Pagela = dedicada => Santo;
-          Pagela = associada => Evento
+          Pagela = associada => Evento;
+		  
+		  %%Pagina 16
+		  pag16_4= iof => Pagela[tipo='lembranca', imagem='pag16_4.jpg', conteudo='Lembrança da primeira comunhao de Manuel Antonio Andresen de Castro Henriques celebrada na Igreja de Paranhos em 21 de Junho de 1936'];
+		  pes16_4 = iof => Pessoa[nome='Manuel Antonio Andresen de Castro Henriques'];
+		  pes16_4 = oferece => pag16_4;
+		  Primeira_Comunhao = is-a => Evento[data='21-06-1936', local='Igreja de Paranhos'];
+		  pag16_4 = associada => Primeira_Comunhao;
+		  
+		  
+		  
         }.
