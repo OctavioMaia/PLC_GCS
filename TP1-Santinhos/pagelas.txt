@@ -1,0 +1,21 @@
+Ontologia Pagelas
+
+conceitos { Pagela[tipo:string, imagem:byte??, conteudo:string], Pessoa[nome:string],
+            Santo[nome:string, historia:string], Evento[data:dateTime, local:string],
+            Festa_Religiosa, Batizado, Primeira_Comunhao, Comunhao_Solene, Casamento, Morte
+          }
+individuos { }
+relacoes { dedicada, recebe, oferece, associada, tem }
+triplos {
+          Festa_Religiosa = subclass => Evento;
+          Batizado = subclass => Evento;
+          Primeira_Comunhao = subclass => Evento;
+          Comunhao_Solene = subclass => Evento;
+          Casamento = subclass => Evento;
+          Morte = subclass => Evento;
+
+          Pessoa = oferece => Pagela;
+          Pessoa = recebe => Pagela;
+          Pagela = dedicada => Santo;
+          Pagela = associada => Evento
+        }.
