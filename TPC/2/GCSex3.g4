@@ -62,7 +62,7 @@ ontologia
        }
     
         
-          : 'Ontologia ' PAL {dot.add("digraph "+$PAL.text+ " {");} conceitos individuos relacoes triplos '.'{dot.add("}"); }
+          : 'Ontologia ' PAL {dot.add("digraph "+$PAL.text+ " {");} conceitos individuos? relacoes triplos '.'{dot.add("}"); }
           ;
 conceitos returns [String atrib] 
             : 'conceitos' '{'PAL{if(!con.contains($PAL.text)){
