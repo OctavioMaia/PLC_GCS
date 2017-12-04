@@ -213,7 +213,7 @@ ligacao
           relh_owl.add("<SubClassOf> \n <Class IRI=\"#" + pal1 + "\"/>" + "\n <Class IRI=\"#" + pal2 + "\"/>" + "\n</SubClassOf>");
        }
        if(rel1.equals("iof")){
-          inst_owl.add("<ClassAssertion> \n <Class IRI=\"#" + pal2 + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal1 + "\"/>" + "\n</ClassAssertion>");
+          inst_owl.add("<ClassAssertion> \n <Class IRI=\"#" + pal1 + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal2 + "\"/>" + "\n</ClassAssertion>");
        }
        if(rel1.equals("owns")| rel1.equals("has") | rel1.equals("pof")){
           instTrip_owl.add("<ObjectPropertyAssertion> \n <ObjectProperty IRI=\"#" + rel1 + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal1 + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal2 + "\"/>"+ "\n</ObjectPropertyAssertion>");
