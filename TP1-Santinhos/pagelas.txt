@@ -4,7 +4,7 @@ conceitos { Pagela[tipo:string, imagem:byte, conteudo:string], Pessoa[nome:strin
             Santo[nome:string, historia:string], Evento[data:dateTime, local:string],
             Festa_Religiosa, Batizado, Primeira_Comunhao, Comunhao_Solene, Casamento, Morte, Aniversario
           }
-individuos { pes16_01, pes16_02_01, pes16_02_02,, pes16_03_01. pes16_03_02, pes16_04, pes16_05, pes16_06_01, pes16_06_02, pes16_07, pes16_08 
+individuos { pes16_01, pes16_02_01, pes16_02_02, pes16_03_01, pes16_03_02, pes16_04, pes16_05, pes16_06_01, pes16_06_02, pes16_07, pes16_08, 
 			 pag16_01, pag16_02, pag16_03, pag16_04, pag16_05, pag16_06, pag16_07, pag16_08,
 			 pes17, pes17_04, pes17_05, pes17_06, pes17_07,
 			 pag17_01, pag17_02, pag17_03, pag17_04, pag17_05, pag17_06, pag17_07, pag17_08,
@@ -15,15 +15,15 @@ individuos { pes16_01, pes16_02_01, pes16_02_02,, pes16_03_01. pes16_03_02, pes1
 			 pes20_01, pes20_02,
 			 pag20_01, pag20_02, pag20_03, pag20_04, pag20_05, pag20_06, pag20_07, pag20_08, 
 			 pes21_01_01, pes21_01_02, pes21_02, pes21_05,
-			 pag21_01, pag21_02 pag21_03, pag21_04, pag21_05,
+			 pag21_01, pag21_02, pag21_03, pag21_04, pag21_05,
 			 pag22_01, pag22_02, pag22_03, pag22_04, pag22_05, pag22_06, pag22_07, pag22_08, 
 			 pes22_01_01, pes22_01_02, pes22_02_01, pes22_03_01, pes22_04_01, pes22_04_02, pes22_05_01, pes22_05_02,
-			 pes22_06_01, pes22_06_02, pes22_07_01, pes22_08_01, pes22_08_02			 
+			 pes22_06_01, pes22_06_02, pes22_07_01, pes22_08_01, pes22_08_02,	 
 			 pes23_01, pes23_02, pes23_03, pes23_04,
-			 pag23_01, pag23_02, pag23_03, pag23_04}
+			 pag23_01, pag23_02, pag23_03, pag23_04  }
 relacoes { dedicada, recebe, oferece, associada, tem }
 triplos {
-          %%tipos de pagelas: -lembranca(para muitos); -oferta(para uma pessoa); -comemoracao; 
+          %%tipos de pagelas: -lembranca(para muitos) -oferta(para uma pessoa) -comemoracao 
 		  %%Pagina 16
 		  pes16_01 = iof => Pessoa[nome='Maria Luiza Henriques'];
 		  pag16_01 = iof => Pagela[tipo='lembranca', imagem='pag16_01.jpg', conteudo='Piedosa lembranca da comunhão solene de Maria Luiza Henriques feita na Sé Catedral do Porto em 24 de maio de 1931'];
@@ -33,7 +33,7 @@ triplos {
 		  
 		  pes16_02_01 = iof => Pessoa[nome='Maria Angélica Andresen de Castro Henriques'];
 		  pes16_02_02 = iof => Pessoa[nome='Elsa Andresen de Castro Henriques'];
-		  pag16_02 = iof => Pagela[tipo='lembranca', imagem='pag16_02.jpg', conteudo='lembranca da Primeira Comunhão de Maria Angélica Andresen de Castro Henriques e Elsa Andresen de Castro Henriques Celebrada na Igreja de Paranhos em 19 de Junho de 1932];
+		  pag16_02 = iof => Pagela[tipo='lembranca', imagem='pag16_02.jpg', conteudo='lembranca da Primeira Comunhão de Maria Angélica Andresen de Castro Henriques e Elsa Andresen de Castro Henriques Celebrada na Igreja de Paranhos em 19 de Junho de 1932'];
 		  pes16_02_01 = oferece => pag16_02;
 		  pes16_02_02 = oferece => pag16_02;
 		  Primeira_Comunhao = is-a => Evento[data='19-06-1932', local='Igreja de Paranhos'];
@@ -63,7 +63,7 @@ triplos {
 		  
 		  pes16_06_01 = iof => Pessoa[nome='Maria Angélica Andresen de Castro Henriques'];
 		  pes16_06_02 = iof => Pessoa[nome='Elsa Andresen de Castro Henriques'];
-		  pag16_06 = iof => Pagela[tipo='lembranca', imagem='pag16_06.jpg', conteudo='lembranca da Primeira Comunhão de Maria Angélica Andresen de Castro Henriques e Elsa Andresen de Castro Henriques Celebrada na Igreja de Paranhos em 19 de Junho de 1932']
+		  pag16_06 = iof => Pagela[tipo='lembranca', imagem='pag16_06.jpg', conteudo='lembranca da Primeira Comunhão de Maria Angélica Andresen de Castro Henriques e Elsa Andresen de Castro Henriques Celebrada na Igreja de Paranhos em 19 de Junho de 1932'];
 		  pes16_06_01 = oferece => pag16_06;
 		  pes16_06_02 = oferece => pag16_06;
 		  Primeira_Comunhao = is-a => Evento[data='19-06-1932', local='Igreja de Paranhos'];
@@ -275,7 +275,7 @@ triplos {
 		  pag21_05 = dedicada => santo21_05;
 		  pag21_05 = associada => Evento[data='11-4-1956', local='Fátima'];
 		  
-		  %%Pagina22
+		   %%Pagina22
 		  pag22_01 = iof => Pagela[tipo='comemoracao', imagem='pag22_01.jpg', conteudo='Léna. Ofereço-te este Santinho por ser dia do teu aniversário tua amiga Pina'];
 		  pes22_01_01 = iof => Pessoa[nome='Lena'];
 		  pes22_01_02 = iof => Pessoa[nome='Pina'];
@@ -293,14 +293,15 @@ triplos {
 		  pag22_03 = iof => Pagela[tipo='oferta', imagem='pag22_03.jpg', conteudo='off: este santinho para que nunca te esqueças da amiguinha muito amiga Lina Porto-16-6-943' ];
 		  pes22_03_01 = iof => Pessoa[nome='Lina'];
 		  pes22_03_01 = oferece => pag22_02;
-		  pag22_03 = associada => Evento[data:'16-06-1943', local:'Porto'] %% Não tem evento especifico. O que fazer?
+		  pag22_03 = associada => Evento[data='16-06-1943', local='Porto']; %% Não tem evento especifico. O que fazer?
+		  
 		  
 		  pag22_04 = iof => Pagela[tipo='oferta', imagem='pag22_04.jpg', conteudo='21-2-941 Ofereço este santinho como prova de muita amizade à muita muito amiga Helena Rangel da muito amiga, Maria Cândida Vila...' ];
 		  pes22_04_01 = iof => Pessoa[nome='Helena Rangel'];
 		  pes22_04_02 = iof => Pessoa[nome='Maria Cândida Vila'];
 		  pes22_04_01 = recebe => pag22_04;
 		  pes22_04_02 = oferece => pag22_04;
-		  pag22_04 = associada => Evento[data:'21-02-1941'] %% Não tem evento especifico. O que fazer?
+		  pag22_04 = associada => Evento[data='21-02-1941'];  %% Não tem evento especifico. O que fazer?
 		  
 		  pag22_05 = iof => Pagela[tipo='comemoracao', imagem='pag22_05.jpg', conteudo='Ofereço à Lena Rangel como recordação do natal. Da tua companheira maria manuela ... 13-12-939'];
 		  pes22_05_01 = iof => Pessoa[nome='Lena Rangel'];
@@ -327,8 +328,7 @@ triplos {
 		  pes22_08_02 = iof => Pessoa[nome='Jicas'];
 		  pes22_08_01 = recebe => pag22_08;
 		  pes22_08_02 = oferece => pag22_08;
-		  pag22_08 = associada => Evento[data:'02-12-1943'] %% Não tem evento especifico. O que fazer?
-		  
+		  pag22_08 = associada => Evento[data='02-12-1943'];
 		  
 		  %%Pagina23
 		  pag23_01 = iof => Pagela[tipo='lembranca', imagem='pag23_01.jpg', conteudo='Lembrança da primeira comunhão de Maria Helena Ribas Figueiredo feita na Igreja de S.Pedro do Monte em Farelães no dia 26 de junho de 1938'];
@@ -353,7 +353,7 @@ triplos {
 		  pes23_04 = iof => Pessoa[nome='Patrícia'];
 		  pes23_04 = oferece => pag23_04;
           Primeira_Comunhao = is-a => Evento[data='18-05-2008', local='Sé de Bragança'];
-          pag23_04 = associada => Primeira_Comunhao;
+          pag23_04 = associada => Primeira_Comunhao
 		  
 		  
 		  
