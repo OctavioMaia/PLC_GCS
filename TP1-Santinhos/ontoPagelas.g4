@@ -8,34 +8,34 @@ grammar ontoPagelas;
 
 @header{
         import java.util.*;
-        import java.io.FileWriter;
+        import java.io.*;
         }
 
 @members{
          //adicionar algo que guarde relacoes e conceitos para depois comparar com os que se encontram nos triplos 
-         ArrayList<String> con = new ArrayList <String>();
-         ArrayList<String> ind = new ArrayList <String>();
-         ArrayList<String> rel = new ArrayList <String>();
-         ArrayList<String> dot = new ArrayList <String>();
+         List<String> con = new ArrayList <>();
+         List<String> ind = new ArrayList <>();
+         List<String> rel = new ArrayList <>();
          
-         ArrayList<String> owl = new ArrayList <String>();
-         ArrayList<String> con_owl = new ArrayList <String>();
-         ArrayList<String> ind_owl = new ArrayList <String>();
-         ArrayList<String> rel_owl = new ArrayList <String>();
-         ArrayList<String> mat_owl = new ArrayList <String>();
-         ArrayList<String> relh_owl = new ArrayList <String>();
-         ArrayList<String> inst_owl = new ArrayList <String>();
-         ArrayList<String> instTrip_owl = new ArrayList <String>();
-         ArrayList<String> instAtrib_owl = new ArrayList <String>();
-         ArrayList<String> triplos_owl = new ArrayList <String>();
-         ArrayList<String> atribCon_owl = new ArrayList <String>();
+         List<String> con_owl = new ArrayList <>();
+         List<String> ind_owl = new ArrayList <>();
+         List<String> rel_owl = new ArrayList <>();
+         List<String> mat_owl = new ArrayList <>();
+         List<String> relh_owl = new ArrayList <>();
+         List<String> inst_owl = new ArrayList <>();
+         List<String> instTrip_owl = new ArrayList <>();
+         List<String> instAtrib_owl = new ArrayList <>();
+         List<String> triplos_owl = new ArrayList <>();
+         List<String> atribCon_owl = new ArrayList <>();
+         
+         List<String> dot = new ArrayList <>();
+         List<String> owl = new ArrayList <>();
+         
          String pal1, pal2, rel1;
-         HashMap<String, String> data = new HashMap<>();
-         
-         //FileWriter writer = new FileWriter("owl.txt");
+         Map<String, String> data = new HashMap<>();
          }
 
-ontologia 
+ontologia
 @after{   
        owl.add("<?xml version=\"1.0\"?>\n" +
                "<!DOCTYPE Ontology[\n" +
@@ -57,19 +57,27 @@ ontologia
        owl.addAll(atribCon_owl);
        owl.add("</Ontology>");
        
-       
-       for (String o : owl) {
-                System.out.println(o);
-                //writer.write(o);
-                }
-       //writer.close();
-       
-       System.out.println("\n");
-       for (String d : dot) 
-                System.out.println(d);
-                
-       
+       //DOT
+       try{
+         FileWriter writer = new FileWriter("C:/Users/"+System.getProperty("user.name")+"/Documents/GitHub/PLC_GCS/TP1-Santinhos/output_DOT.dot");
+         for(String str: dot) {
+             writer.write(str);
+         }
+       }catch(Exception e){
+         System.out.println("Erro DOT");
        }
+       
+       //OWL
+       try{
+         FileWriter writer = new FileWriter("C:/Users/"+System.getProperty("user.name")+"/Documents/GitHub/PLC_GCS/TP1-Santinhos/output_OWL.owl");
+         for(String str: owl) {
+             writer.write(str);
+         }
+       }catch(Exception e){
+         System.out.println("Erro OWL");
+       }
+       
+      }
     
         
           : 'Ontologia ' PAL {dot.add("digraph "+$PAL.text+ " {");} conceitos individuos? relacoes triplos '.'{dot.add("}"); }

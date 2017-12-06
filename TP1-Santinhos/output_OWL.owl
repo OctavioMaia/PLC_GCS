@@ -1,0 +1,3529 @@
+<?xml version="1.0"?>
+<!DOCTYPE Ontology[
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+	<!ENTITY xml "http://www.w3.org/XML/1998/namespace">
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf?schema#">
+	<!ENTITY rdf "http://www.w3.org/1999/02/22?rdf?syntax?ns#">
+]>
+<Ontology><Declaration> 
+ <Class IRI="#Pagela"/>
+</Declaration><Declaration> 
+ <Class IRI="#Pessoa"/></Declaration><Declaration> 
+ <Class IRI="#Santo"/></Declaration><Declaration> 
+ <Class IRI="#Evento"/></Declaration><Declaration> 
+ <Class IRI="#Festa_Religiosa"/></Declaration><Declaration> 
+ <Class IRI="#Batizado"/></Declaration><Declaration> 
+ <Class IRI="#Primeira_Comunhao"/></Declaration><Declaration> 
+ <Class IRI="#Comunhao_Solene"/></Declaration><Declaration> 
+ <Class IRI="#Casamento"/></Declaration><Declaration> 
+ <Class IRI="#Morte"/></Declaration><Declaration> 
+ <Class IRI="#Aniversario"/></Declaration><Declaration> 
+ <DataProperty IRI="#tipo"/>
+</Declaration><Declaration> 
+ <DataProperty IRI="#imagem"/>
+</Declaration><Declaration> 
+ <DataProperty IRI="#conteudo"/>
+</Declaration><Declaration> 
+ <DataProperty IRI="#nome"/>
+</Declaration><Declaration> 
+ <DataProperty IRI="#nome"/>
+</Declaration><Declaration> 
+ <DataProperty IRI="#historia"/>
+</Declaration><Declaration> 
+ <DataProperty IRI="#data"/>
+</Declaration><Declaration> 
+ <DataProperty IRI="#local"/>
+</Declaration><Declaration> 
+ <ObjectProperty IRI="#dedicada"/>
+</Declaration><Declaration> 
+ <ObjectProperty IRI="#recebe"/>
+</Declaration><Declaration> 
+ <ObjectProperty IRI="#oferece"/>
+</Declaration><Declaration> 
+ <ObjectProperty IRI="#associada"/>
+</Declaration><Declaration> 
+ <ObjectProperty IRI="#tem"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes16_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes16_02_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes16_02_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes16_03_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes16_03_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes16_04"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes16_05"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes16_06_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes16_06_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes16_07"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes16_08"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag16_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag16_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag16_03"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag16_04"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag16_05"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag16_06"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag16_07"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag16_08"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes17"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes17_04"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes17_05"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes17_06"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes17_07"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag17_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag17_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag17_03"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag17_04"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag17_05"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag17_06"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag17_07"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag17_08"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes18_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes18_02_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes18_02_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes18_03"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes18_06"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes18_07"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes18_08"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag18_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag18_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag18_03"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag18_04"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag18_05"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag18_06"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag18_07"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag18_08"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes19_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes19_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes19_03"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes19_04"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes19_05"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes19_06"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag19_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag19_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag19_03"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag19_04"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag19_05"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag19_06"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes20_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes20_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag20_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag20_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag20_03"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag20_04"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag20_05"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag20_06"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag20_07"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag20_08"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes21_01_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes21_01_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes21_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes21_05"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag21_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag21_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag21_03"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag21_04"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag21_05"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag22_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag22_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag22_03"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag22_04"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag22_05"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag22_06"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag22_07"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag22_08"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes22_01_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes22_01_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes22_02_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes22_03_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes22_04_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes22_04_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes22_05_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes22_05_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes22_06_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes22_06_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes22_07_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes22_08_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes22_08_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes23_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes23_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes23_03"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pes23_04"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag23_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag23_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag23_03"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#pag23_04"/>
+</Declaration><SubClassOf> 
+ <Class IRI="#Comunhao_Solene"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Primeira_Comunhao"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Primeira_Comunhao"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Primeira_Comunhao"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Primeira_Comunhao"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Crisma"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Primeira_Comunhao"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Comunhao_Solene"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Comunhao_Solene"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Primeira_Comunhao"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Comunhao_Solene"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Primeira_Comunhao"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Primeira_Comunhao"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Primeira_Comunhao"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Primeira_Comunhao"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Primeira_Comunhao"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Comunhao_Solene"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Festa_Religiosa"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Primeira_Comunhao"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Festa_Religiosa"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Aniversario"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Comunhao_Solene"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Festa_Religiosa"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Aniversario"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Aniversario"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Primeira_Comunhao"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Crisma"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Primeira_Comunhao"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><SubClassOf> 
+ <Class IRI="#Primeira_Comunhao"/>
+ <Class IRI="#Evento"/>
+</SubClassOf><ClassAssertion> 
+ <Class IRI="#pes16_01"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag16_01"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes16_02_01"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes16_02_02"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag16_02"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes16_03_01"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes16_03_02"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag16_03"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes16_04"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag16_04"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes16_05"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag16_05"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes16_06_01"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes16_06_02"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag16_06"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes16_07"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag16_07"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes16_08"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag16_08"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag17_01"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag17_02"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag17_03"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag17_04"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag17_05"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag17_06"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag17_07"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag17_08"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes17"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes17_04"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes17_05"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes17_07"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag18_01"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag18_02"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag18_03"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag18_04"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag18_05"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag18_06"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag18_07"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag18_08"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes18_01"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes18_02_01"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes18_02_02"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes18_03"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes18_06"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes18_07"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes18_08"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag19_01"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes19_01"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag19_02"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes19_02"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag19_03"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes19_03"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag19_04"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes19_04"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag19_05"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes19_05"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag19_06"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes19_06"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag20_02"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag20_01"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag20_03"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag20_04"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag20_05"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag20_06"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag20_07"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag20_08"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes20_01"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes20_02"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag21_01"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes21_01_01"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes21_01_02"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag21_02"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes21_02"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag21_03"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag21_04"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag21_05"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes21_05"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#santo21_05"/>
+ <NamedIndividual IRI="#Santo"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag22_01"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes22_01_01"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes22_01_02"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag22_02"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes22_02_01"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag22_03"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes22_03_01"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag22_04"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes22_04_01"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes22_04_02"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag22_05"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes22_05_01"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes22_05_02"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag22_06"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes22_06_01"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag22_07"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes22_07_01"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag22_08"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes22_08_01"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes22_08_02"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag23_01"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes23_01"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag23_02"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes23_02"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag23_03"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes23_03"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag23_04"/>
+ <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pes23_04"/>
+ <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes16_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Luiza Henriques'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag16_01"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag16_01"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag16_01.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag16_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Piedosa lembranca da comunhão solene de Maria Luiza Henriques feita na Sé Catedral do Porto em 24 de maio de 1931'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'24-05-1931'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <Literal datatypeIRI="&xsd;string">'Sé Catedral do Porto'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes16_02_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Angélica Andresen de Castro Henriques'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes16_02_02"/> 
+ <Literal datatypeIRI="&xsd;string">'Elsa Andresen de Castro Henriques'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag16_02"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag16_02"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag16_02.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag16_02"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca da Primeira Comunhão de Maria Angélica Andresen de Castro Henriques e Elsa Andresen de Castro Henriques Celebrada na Igreja de Paranhos em 19 de Junho de 1932'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'19-06-1932'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;string">'Igreja de Paranhos'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes16_03_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Angélica Andresen de Castro Henriques'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes16_03_02"/> 
+ <Literal datatypeIRI="&xsd;string">'Elsa Andresen de Castro Henriques'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag16_03"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag16_03"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag16_03.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag16_03"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca da Primeira Comunhão de Maria Angélica Andresen de Castro Henriques e Elsa Andresen de Castro Henriques Celebrada na Igreja de Paranhos em 19 de Junho de 1932'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'19-06-1932'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;string">'Igreja de Paranhos'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes16_04"/> 
+ <Literal datatypeIRI="&xsd;string">'Manuel Antonio Andresen de Castro Henriques'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag16_04"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag16_04"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag16_04.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag16_04"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca da Primeira Comunhão de Manuel Antonio Andresen de Castro Henriques celebrada na Igreja de Paranhos em 21 de Junho de 1936'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'21-06-1936'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;string">'Igreja de Paranhos'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes16_05"/> 
+ <Literal datatypeIRI="&xsd;string">'Guilherme António Andresen de Castro Henriques'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag16_05"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag16_05"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag16_05.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag16_05"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca da Primeira Comunhão e Confirmação de Guilherme António Andresen de Castro Henriques recebidas na Igreja de Paranhos 15-VI-1947'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'15-06-1947'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;string">'Igreja de Paranhos'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Crisma"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'15-06-1947'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#Crisma"/> 
+ <Literal datatypeIRI="&xsd;string">'Igreja de Paranhos'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes16_06_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Angélica Andresen de Castro Henriques'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes16_06_02"/> 
+ <Literal datatypeIRI="&xsd;string">'Elsa Andresen de Castro Henriques'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag16_06"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag16_06"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag16_06.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag16_06"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca da Primeira Comunhão de Maria Angélica Andresen de Castro Henriques e Elsa Andresen de Castro Henriques Celebrada na Igreja de Paranhos em 19 de Junho de 1932'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'19-06-1932'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;string">'Igreja de Paranhos'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes16_07"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Luiza Henriques'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag16_07"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag16_07"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag16_07.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag16_07"/> 
+ <Literal datatypeIRI="&xsd;string">'Piedosa lembranca da comunhão solene de Maria Luiza Henriques feita na Sé Catedral do Porto em 24 de maio de 1931'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'24-05-1931'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <Literal datatypeIRI="&xsd;string">'Sé Catedral do Porto'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes16_08"/> 
+ <Literal datatypeIRI="&xsd;string">'Carlos Manuel Henriques'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag16_08"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag16_08"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag16_08.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag16_08"/> 
+ <Literal datatypeIRI="&xsd;string">'Comunhão Solene de Carlos Manuel Henriques Feita na Igreja de Campanhã a 10 de Maio de 1936'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'10-05-1936'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <Literal datatypeIRI="&xsd;string">'Igreja de Campanhã'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag17_01"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag17_01"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag17_01.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag17_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Nas alegrias e tristezas, nas suas orações, nunca me esqueça. E no seu coração grande sempre um cantinho para o seu tio ... No dia da sua primeira comunhão ... 2/7.1939'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag17_02"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag17_02"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag17_02.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag17_02"/> 
+ <Literal datatypeIRI="&xsd;string">'2-6-1939 Como lembrança da tua 1-Comunhão dia mais feliz da tua vida em que recebeste o Jesus na tua alma. Reza uma Ave Maria para uma intenção'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag17_03"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag17_03"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag17_03.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag17_03"/> 
+ <Literal datatypeIRI="&xsd;string">'a minha querida filha Maria Helena com muitos beijos no dia da sua 1ª Comunhão 2 de Julho 1939'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag17_04"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag17_04"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag17_04.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag17_04"/> 
+ <Literal datatypeIRI="&xsd;string">'no dia da sua primeira comunhão um beijo do seu irmão alexandre 2 de Julho 1939'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag17_05"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag17_05"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag17_05.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag17_05"/> 
+ <Literal datatypeIRI="&xsd;string">'No dia da sua primeira comunhão lembrança do seu irmão. António Sabino'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag17_06"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag17_06"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag17_06.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag17_06"/> 
+ <Literal datatypeIRI="&xsd;string">'2-7-939 Lembrança da 1ª comunhão da avosinha ...'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag17_07"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag17_07"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag17_07.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag17_07"/> 
+ <Literal datatypeIRI="&xsd;string">'Um beijo no dia da sua 1ªComunhão do seu irmão João Manuel'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag17_08"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag17_08"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag17_08.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag17_08"/> 
+ <Literal datatypeIRI="&xsd;string">'à Leninha, como lembrança da sua 1ª Comunhão e para que Deus a abençoe para toda a vida! Maria Helena'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes17"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Helena'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes17_04"/> 
+ <Literal datatypeIRI="&xsd;string">'Alexandre'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes17_05"/> 
+ <Literal datatypeIRI="&xsd;string">'António Sabino'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes17_07"/> 
+ <Literal datatypeIRI="&xsd;string">'João Manuel'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'02-07-1939'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;string">'Igreja de Nevogilde'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag18_01"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag18_01"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag18_01.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag18_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Como lembrança do feliz dia da tua Primeira Comunhão da tua amiguinha. Maria Virgínia Pôrto 2-6-939'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag18_02"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag18_02"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag18_02.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag18_02"/> 
+ <Literal datatypeIRI="&xsd;string">'No dia mais feliz da sua vida não se esqueça de rezar uma avé-Maria pelos tios muito amigos Maria Fernanda e Fernando'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag18_03"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag18_03"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag18_03.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag18_03"/> 
+ <Literal datatypeIRI="&xsd;string">'Para que se lembre sempre de pedir à Santa Terezinha pela tia Celice. No dia da sua 1ªComunhão 2 de Julho de 1939 Nevogilde'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag18_04"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag18_04"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag18_04.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag18_04"/> 
+ <Literal datatypeIRI="&xsd;string">'Que os anjos que te acompanharam à tua 1ª Comunhão sejam os teus guias pela vida... 2-7-939'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag18_05"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag18_05"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag18_05.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag18_05"/> 
+ <Literal datatypeIRI="&xsd;string">'que a sua primeira comunhão seja a sua melhor esperança e a sua mais doce lembrança 2-7-1939 M.C.M'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag18_06"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag18_06"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag18_06.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag18_06"/> 
+ <Literal datatypeIRI="&xsd;string">'Recordação da sua comunhão solene feita em Nevogilde a 2 Julgo de 1939 Maria Alice'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag18_07"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag18_07"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag18_07.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag18_07"/> 
+ <Literal datatypeIRI="&xsd;string">'Oferece com muitos parabéns pela tua comunhão a tua muito amigo que nunca te esqueçe Maria Alice Salvé dia de 2-7-939'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag18_08"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag18_08"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag18_08.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag18_08"/> 
+ <Literal datatypeIRI="&xsd;string">'2-7-939 Que o Bom Pastor a guie sempre durante a vida: é o que pede neste grande dia, a muito amiga. Maria Filomena'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes18_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Virgínia'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes18_02_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Fernanda'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes18_02_02"/> 
+ <Literal datatypeIRI="&xsd;string">'Fernando'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes18_03"/> 
+ <Literal datatypeIRI="&xsd;string">'Celice'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes18_06"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Alice'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes18_07"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Alice'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes18_08"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Filomena'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag19_01"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag19_01"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag19_01.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag19_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Lembraça da Comunhão Solene de Joaquim Sabino Cyrne Rangel Pamplona feita na igreja de Nevogilde a 11 de Junho de 1944'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes19_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Joaquim Sabino Cyrne Rangel Pamplona'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'11-06-1944'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <Literal datatypeIRI="&xsd;string">'Igreja de Nevogilde'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag19_02"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag19_02"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag19_02.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag19_02"/> 
+ <Literal datatypeIRI="&xsd;string">'Lembrança da Primeira Comunhão de Alexandre Rangel Pamplona feita na Igreja de Nevogilde em 24 de Julho de 1948'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes19_02"/> 
+ <Literal datatypeIRI="&xsd;string">'Alexandre Rangel Pamplona'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'24-07-1948'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;string">'Igreja de Nevogilde'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag19_03"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag19_03"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag19_03.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag19_03"/> 
+ <Literal datatypeIRI="&xsd;string">'Lembrança da Primeira Comunhão de Carmen d´Araujo Rangel Pamplona feita na Igreja de Nevogilde em 5 de Julho de 1935'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes19_03"/> 
+ <Literal datatypeIRI="&xsd;string">'Carmen d´Araujo Rangel Pamplona'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'05-07-1935'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;string">'Igreja de Nevogilde'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag19_04"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag19_04"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag19_04.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag19_04"/> 
+ <Literal datatypeIRI="&xsd;string">'Lembrança da Primeira Comunhão de José Manuel Pinto da Silva Cardoso Pereira feita na Igreja de Nevogilde em 19 de Março de 1953'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes19_04"/> 
+ <Literal datatypeIRI="&xsd;string">'José Manuel Pinto da Silva Cardoso Pereira'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'19-03-1935'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;string">'Igreja de Nevogilde'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag19_05"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag19_05"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag19_05.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag19_05"/> 
+ <Literal datatypeIRI="&xsd;string">'Lembrança da Primeira Comunhão de Maria Helena d´Araujo Rangel Pamplona feita na Igreja de Nevogilde - Foz no dia 2 de Julho de 1939'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes19_05"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Helena d´Araujo Rangel Pamplona'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'02-07-1939'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;string">'Igreja de Nevogilde - Foz'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag19_06"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag19_06"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag19_06.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag19_06"/> 
+ <Literal datatypeIRI="&xsd;string">'Lembrança da Primeira Comunhão de João Manoel d´Araujo Rangel Pamplona feita -- 28 de Abril de 1943'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes19_06"/> 
+ <Literal datatypeIRI="&xsd;string">'João Manoel d´Araujo Rangel Pamplona'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'28-04-1943'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag20_02"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag20_02"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag20_02.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag20_02"/> 
+ <Literal datatypeIRI="&xsd;string">'Lembraça da Comunhão Solene de Maria José e Maria Luiza dos Santos Rangel Pamplona Feita na Igreja Paroquial de Matosinhos em 26-4-959'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag20_01"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag20_01"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag20_01.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag20_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Lembraça da Comunhão Solene de Maria José e Maria Luiza dos Santos Rangel Pamplona Feita na Igreja Paroquial de Matosinhos em 26-4-959'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag20_03"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag20_03"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag20_03.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag20_03"/> 
+ <Literal datatypeIRI="&xsd;string">'Lembraça da Comunhão Solene de Maria José e Maria Luiza dos Santos Rangel Pamplona Feita na Igreja Paroquial de Matosinhos em 26-4-959'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag20_04"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag20_04"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag20_04.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag20_04"/> 
+ <Literal datatypeIRI="&xsd;string">'Lembraça da Comunhão Solene de Maria José e Maria Luiza dos Santos Rangel Pamplona Feita na Igreja Paroquial de Matosinhos em 26-4-959'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag20_05"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag20_05"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag20_05.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag20_05"/> 
+ <Literal datatypeIRI="&xsd;string">'Lembraça da Comunhão Solene de Maria José e Maria Luiza dos Santos Rangel Pamplona Feita na Igreja Paroquial de Matosinhos em 26-4-959'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag20_06"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag20_06"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag20_06.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag20_06"/> 
+ <Literal datatypeIRI="&xsd;string">'Lembraça da Comunhão Solene de Maria José e Maria Luiza dos Santos Rangel Pamplona Feita na Igreja Paroquial de Matosinhos em 26-4-959'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag20_07"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag20_07"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag20_07.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag20_07"/> 
+ <Literal datatypeIRI="&xsd;string">'Lembraça da Comunhão Solene de Maria José e Maria Luiza dos Santos Rangel Pamplona Feita na Igreja Paroquial de Matosinhos em 26-4-959'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag20_08"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag20_08"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag20_08.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag20_08"/> 
+ <Literal datatypeIRI="&xsd;string">'Lembraça da Comunhão Solene de Maria José e Maria Luiza dos Santos Rangel Pamplona Feita na Igreja Paroquial de Matosinhos em 26-4-959'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes20_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria José dos Santos Rangel Pamplona'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes20_02"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Luizados Santos Rangel Pamplona'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'26-04-1959'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <Literal datatypeIRI="&xsd;string">'Igreja Paroquial de Matosinhos'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag21_01"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag21_01"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag21_01.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag21_01"/> 
+ <Literal datatypeIRI="&xsd;string">'29-x-940 Ofereço êste santinho à Helena como prova de muita amizade da muito amiga Maria Fernanda Gomes'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes21_01_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Helena'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes21_01_02"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Fernanda Gomes'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Festa_Religiosa"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'29-10-1940'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag21_02"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag21_02"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag21_02.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag21_02"/> 
+ <Literal datatypeIRI="&xsd;string">'Lembrança da primeira comunhão de Maria Luíza Pinto Salgado Nevogilde II-VII-MCMXXXIX'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes21_02"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Luíza Pinto Salgado'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'02-07-1939'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag21_03"/> 
+ <Literal datatypeIRI="&xsd;string">'comemoracao'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag21_03"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag21_03.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag21_03"/> 
+ <Literal datatypeIRI="&xsd;string">'Eu cá sou anfitrião cumpro o dever social discursos, palestras não, mas a todos um bom Natal!  Natal 82'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Festa_Religiosa"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'1982'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag21_04"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag21_04"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag21_04.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag21_04"/> 
+ <Literal datatypeIRI="&xsd;string">'úlitmas férias que passámos todos em S.Veríssimo... Visita Pascal em Figueiredo -- Amares P.Fernando 22/4/73'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#pag21_04"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'22/04/1973'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#pag21_04"/> 
+ <Literal datatypeIRI="&xsd;string">'Figueiredo Amares'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag21_05"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag21_05"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag21_05.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag21_05"/> 
+ <Literal datatypeIRI="&xsd;string">'Rezei a Nossa Senhora pelo querido frio Fátima 11-4-1946 Maria Alice'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes21_05"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Alice'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#santo21_05"/> 
+ <Literal datatypeIRI="&xsd;string">'Nossa Senhora'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#pag21_05"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'11-4-1956'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#pag21_05"/> 
+ <Literal datatypeIRI="&xsd;string">'Fátima'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag22_01"/> 
+ <Literal datatypeIRI="&xsd;string">'comemoracao'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag22_01"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag22_01.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag22_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Léna. Ofereço-te este Santinho por ser dia do teu aniversário tua amiga Pina'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes22_01_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Lena'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes22_01_02"/> 
+ <Literal datatypeIRI="&xsd;string">'Pina'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag22_02"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag22_02"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag22_02.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag22_02"/> 
+ <Literal datatypeIRI="&xsd;string">'Ofereço à minha amiga ... . Como lembrança da Comonhão Solena. Maria 11-4-1938'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes22_02_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'11-04-1938'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag22_03"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag22_03"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag22_03.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag22_03"/> 
+ <Literal datatypeIRI="&xsd;string">'off: este santinho para que nunca te esqueças da amiguinha muito amiga Lina Porto-16-6-943'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes22_03_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Lina'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#pag22_03"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'16-06-1943'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#pag22_03"/> 
+ <Literal datatypeIRI="&xsd;string">'Porto'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag22_04"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag22_04"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag22_04.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag22_04"/> 
+ <Literal datatypeIRI="&xsd;string">'21-2-941 Ofereço este santinho como prova de muita amizade à muita muito amiga Helena Rangel da muito amiga, Maria Cândida Vila...'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes22_04_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Helena Rangel'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes22_04_02"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Cândida Vila'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#pag22_04"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'21-02-1941'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag22_05"/> 
+ <Literal datatypeIRI="&xsd;string">'comemoracao'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag22_05"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag22_05.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag22_05"/> 
+ <Literal datatypeIRI="&xsd;string">'Ofereço à Lena Rangel como recordação do natal. Da tua companheira maria manuela ... 13-12-939'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes22_05_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Lena Rangel'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes22_05_02"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Manuela'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Festa_Religiosa"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'13-12-1939'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag22_06"/> 
+ <Literal datatypeIRI="&xsd;string">'comemoracao'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag22_06"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag22_06.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag22_06"/> 
+ <Literal datatypeIRI="&xsd;string">'6-3-939 Envio-te muitos parabens e felicidades no dia de hoje e que se repita por muitos anos na companhia da tua familia. Desta tua aminga. Né 6/3/1939'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes22_06_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Manuela'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Aniversario"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'06-03-1939'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag22_07"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag22_07"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag22_07.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag22_07"/> 
+ <Literal datatypeIRI="&xsd;string">'Que o menino Jesus te cobra de benção e que viva sempre no teu coração Maria Helana Figueiredo 2-7-1989'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes22_07_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Helana Figueiredo'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Aniversario"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'06-03-1939'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag22_08"/> 
+ <Literal datatypeIRI="&xsd;string">'oferta'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag22_08"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag22_08.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag22_08"/> 
+ <Literal datatypeIRI="&xsd;string">'Para a minha querida Lina ofereço esta pequena lembrança a amiga e companheira de sempre Jicas 2-12-1943'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes22_08_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Lina'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes22_08_02"/> 
+ <Literal datatypeIRI="&xsd;string">'Jicas'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#pag22_08"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'02-12-1943'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag23_01"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag23_01"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag23_01.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag23_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Lembrança da primeira comunhão de Maria Helena Ribas Figueiredo feita na Igreja de S.Pedro do Monte em Farelães no dia 26 de junho de 1938'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes23_01"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria Helena Ribas Figueiredo'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'26-06-1938'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;string">'Igreja de S.Pedro do Monte Farelães'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag23_02"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag23_02"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag23_02.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag23_02"/> 
+ <Literal datatypeIRI="&xsd;string">'Lembrança do Crisma Patrícia Dias recebi o sacramento do Crisma na Igreja de Catedral de Bragança no dia 15 de Maio 2016'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes23_02"/> 
+ <Literal datatypeIRI="&xsd;string">'Patrícia Dias'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Crisma"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'15-05-2016'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#Crisma"/> 
+ <Literal datatypeIRI="&xsd;string">'Catedral de Bragança'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag23_03"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag23_03"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag23_03.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag23_03"/> 
+ <Literal datatypeIRI="&xsd;string">'Lembrança da primeira comunhão de Maria de Lourdes Pinto Salgado feita na Igreja de Nevogilde no dia 27-VI-1937'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes23_03"/> 
+ <Literal datatypeIRI="&xsd;string">'Maria de Lourdes Pinto Salgado'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'27-07-1937'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;string">'Igreja de Nevogilde'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#tipo"/>
+ <NamedIndividual IRI="#pag23_04"/> 
+ <Literal datatypeIRI="&xsd;string">'lembranca'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#imagem"/>
+ <NamedIndividual IRI="#pag23_04"/> 
+ <Literal datatypeIRI="&xsd;byte">'pag23_04.jpg'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#conteudo"/>
+ <NamedIndividual IRI="#pag23_04"/> 
+ <Literal datatypeIRI="&xsd;string">'1ªComunhão Sé de Bragança Patrícia 18 de Maio de 2008  Beijinhos da Patrícia'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#nome"/>
+ <NamedIndividual IRI="#pes23_04"/> 
+ <Literal datatypeIRI="&xsd;string">'Patrícia'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#data"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;dateTime">'18-05-2008'</Literal> 
+</DataPropertyAssertion><DataPropertyAssertion> 
+ <DataProperty IRI="#local"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <Literal datatypeIRI="&xsd;string">'Sé de Bragança'</Literal> 
+</DataPropertyAssertion><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Santo"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#
