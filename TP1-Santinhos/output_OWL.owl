@@ -260,99 +260,84 @@
  <NamedIndividual IRI="#pag23_03"/>
 </Declaration><Declaration> 
  <NamedIndividual IRI="#pag23_04"/>
-</Declaration><SubClassOf> 
- <Class IRI="#Comunhao_Solene"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Primeira_Comunhao"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Primeira_Comunhao"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Primeira_Comunhao"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Primeira_Comunhao"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Crisma"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Primeira_Comunhao"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Comunhao_Solene"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Comunhao_Solene"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Primeira_Comunhao"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Comunhao_Solene"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Primeira_Comunhao"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Primeira_Comunhao"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Primeira_Comunhao"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Primeira_Comunhao"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Primeira_Comunhao"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Comunhao_Solene"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Festa_Religiosa"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Primeira_Comunhao"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Festa_Religiosa"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Aniversario"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Comunhao_Solene"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Festa_Religiosa"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Aniversario"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Aniversario"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Primeira_Comunhao"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Crisma"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Primeira_Comunhao"/>
- <Class IRI="#Evento"/>
-</SubClassOf><SubClassOf> 
- <Class IRI="#Primeira_Comunhao"/>
- <Class IRI="#Evento"/>
-</SubClassOf><ClassAssertion> 
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev16_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev16_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev16_03"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev16_04"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev16_05"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev16_06"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev16_07"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev16_08"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev17"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev19_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev19_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev19_03"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev19_04"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev19_05"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev19_06"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev20"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev21_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev21_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev21_03"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev21_04"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev21_05"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev22_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev22_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev22_03"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev22_04"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev22_05"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev22_06"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev22_07"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev22_08"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev23_01"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev23_02"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev23_03"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#ev23_04"/>
+</Declaration><ClassAssertion> 
  <Class IRI="#pes16_01"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pag16_01"/>
  <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev16_01"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag16_01"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pes16_02_01"/>
  <NamedIndividual IRI="#Pessoa"/>
@@ -363,6 +348,12 @@
  <Class IRI="#pag16_02"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev16_02"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag16_02"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pes16_03_01"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
@@ -372,17 +363,38 @@
  <Class IRI="#pag16_03"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev16_03"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag16_03"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pes16_04"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pag16_04"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev16_04"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag16_04"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pes16_05"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pag16_05"/>
  <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev16_05"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag16_05"/>
+ <NamedIndividual IRI="#Crisma"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag16_05"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pes16_06_01"/>
  <NamedIndividual IRI="#Pessoa"/>
@@ -393,17 +405,35 @@
  <Class IRI="#pag16_06"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev16_06"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag16_06"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pes16_07"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pag16_07"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev16_07"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag16_07"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pes16_08"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pag16_08"/>
  <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev16_08"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag16_08"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pag17_01"/>
  <NamedIndividual IRI="#Pagela"/>
@@ -440,6 +470,33 @@
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pes17_07"/>
  <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev17"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag17_01"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag17_02"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag17_03"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag17_04"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag17_05"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag17_06"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag17_07"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag17_08"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pag18_01"/>
  <NamedIndividual IRI="#Pagela"/>
@@ -486,11 +543,41 @@
  <Class IRI="#pes18_08"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag18_01"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag18_02"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag18_03"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag18_04"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag18_05"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag18_06"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag18_07"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag18_08"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pag19_01"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pes19_01"/>
  <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev19_01"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag19_01"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pag19_02"/>
  <NamedIndividual IRI="#Pagela"/>
@@ -498,11 +585,23 @@
  <Class IRI="#pes19_02"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev19_02"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag19_02"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pag19_03"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pes19_03"/>
  <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev19_03"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag19_03"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pag19_04"/>
  <NamedIndividual IRI="#Pagela"/>
@@ -510,17 +609,35 @@
  <Class IRI="#pes19_04"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev19_04"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag19_04"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pag19_05"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pes19_05"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev19_05"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag19_05"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pag19_06"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pes19_06"/>
  <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev19_06"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag19_06"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pag20_02"/>
  <NamedIndividual IRI="#Pagela"/>
@@ -552,6 +669,33 @@
  <Class IRI="#pes20_02"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev20"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag20_01"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag20_02"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag20_03"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag20_04"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag20_05"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag20_06"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag20_07"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag20_08"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pag21_01"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
@@ -561,17 +705,38 @@
  <Class IRI="#pes21_01_02"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev21_01"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag21_01"/>
+ <NamedIndividual IRI="#Festa_Religiosa"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pag21_02"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pes21_02"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev21_02"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag21_02"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pag21_03"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev21_03"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag21_03"/>
+ <NamedIndividual IRI="#Festa_Religiosa"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pag21_04"/>
  <NamedIndividual IRI="#Pagela"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev21_04"/>
+ <NamedIndividual IRI="#Evento"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pag21_05"/>
  <NamedIndividual IRI="#Pagela"/>
@@ -582,6 +747,9 @@
  <Class IRI="#santo21_05"/>
  <NamedIndividual IRI="#Santo"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev21_05"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pag22_01"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
@@ -591,17 +759,32 @@
  <Class IRI="#pes22_01_02"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev22_01"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag22_01"/>
+ <NamedIndividual IRI="#Aniversario"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pag22_02"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pes22_02_01"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev22_02"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag22_02"/>
+ <NamedIndividual IRI="#Comunhao_Solene"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pag22_03"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pes22_03_01"/>
  <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev22_03"/>
+ <NamedIndividual IRI="#Evento"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pag22_04"/>
  <NamedIndividual IRI="#Pagela"/>
@@ -612,6 +795,9 @@
  <Class IRI="#pes22_04_02"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev22_04"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pag22_05"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
@@ -621,17 +807,35 @@
  <Class IRI="#pes22_05_02"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev22_05"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag22_05"/>
+ <NamedIndividual IRI="#Festa_Religiosa"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pag22_06"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pes22_06_01"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev22_06"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag22_06"/>
+ <NamedIndividual IRI="#Aniversario"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pag22_07"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pes22_07_01"/>
  <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev22_07"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag22_07"/>
+ <NamedIndividual IRI="#Aniversario"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pag22_08"/>
  <NamedIndividual IRI="#Pagela"/>
@@ -642,11 +846,20 @@
  <Class IRI="#pes22_08_02"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev22_08"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pag23_01"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pes23_01"/>
  <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev23_01"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag23_01"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pag23_02"/>
  <NamedIndividual IRI="#Pagela"/>
@@ -654,17 +867,35 @@
  <Class IRI="#pes23_02"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev23_02"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag23_02"/>
+ <NamedIndividual IRI="#Crisma"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pag23_03"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pes23_03"/>
  <NamedIndividual IRI="#Pessoa"/>
 </ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev23_03"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag23_03"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
+</ClassAssertion><ClassAssertion> 
  <Class IRI="#pag23_04"/>
  <NamedIndividual IRI="#Pagela"/>
 </ClassAssertion><ClassAssertion> 
  <Class IRI="#pes23_04"/>
  <NamedIndividual IRI="#Pessoa"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#ev23_04"/>
+ <NamedIndividual IRI="#Evento"/>
+</ClassAssertion><ClassAssertion> 
+ <Class IRI="#pag23_04"/>
+ <NamedIndividual IRI="#Primeira_Comunhao"/>
 </ClassAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#nome"/>
  <NamedIndividual IRI="#pes16_01"/> 
@@ -683,11 +914,11 @@
  <Literal datatypeIRI="&xsd;string">'Piedosa lembranca da comunhão solene de Maria Luiza Henriques feita na Sé Catedral do Porto em 24 de maio de 1931'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <NamedIndividual IRI="#ev16_01"/> 
  <Literal datatypeIRI="&xsd;dateTime">'24-05-1931'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <NamedIndividual IRI="#ev16_01"/> 
  <Literal datatypeIRI="&xsd;string">'Sé Catedral do Porto'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#nome"/>
@@ -711,11 +942,11 @@
  <Literal datatypeIRI="&xsd;string">'lembranca da Primeira Comunhão de Maria Angélica Andresen de Castro Henriques e Elsa Andresen de Castro Henriques Celebrada na Igreja de Paranhos em 19 de Junho de 1932'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev16_02"/> 
  <Literal datatypeIRI="&xsd;dateTime">'19-06-1932'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev16_02"/> 
  <Literal datatypeIRI="&xsd;string">'Igreja de Paranhos'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#nome"/>
@@ -739,11 +970,11 @@
  <Literal datatypeIRI="&xsd;string">'lembranca da Primeira Comunhão de Maria Angélica Andresen de Castro Henriques e Elsa Andresen de Castro Henriques Celebrada na Igreja de Paranhos em 19 de Junho de 1932'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev16_03"/> 
  <Literal datatypeIRI="&xsd;dateTime">'19-06-1932'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev16_03"/> 
  <Literal datatypeIRI="&xsd;string">'Igreja de Paranhos'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#nome"/>
@@ -763,11 +994,11 @@
  <Literal datatypeIRI="&xsd;string">'lembranca da Primeira Comunhão de Manuel Antonio Andresen de Castro Henriques celebrada na Igreja de Paranhos em 21 de Junho de 1936'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev16_04"/> 
  <Literal datatypeIRI="&xsd;dateTime">'21-06-1936'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev16_04"/> 
  <Literal datatypeIRI="&xsd;string">'Igreja de Paranhos'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#nome"/>
@@ -787,19 +1018,11 @@
  <Literal datatypeIRI="&xsd;string">'lembranca da Primeira Comunhão e Confirmação de Guilherme António Andresen de Castro Henriques recebidas na Igreja de Paranhos 15-VI-1947'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev16_05"/> 
  <Literal datatypeIRI="&xsd;dateTime">'15-06-1947'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
- <Literal datatypeIRI="&xsd;string">'Igreja de Paranhos'</Literal> 
-</DataPropertyAssertion><DataPropertyAssertion> 
- <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Crisma"/> 
- <Literal datatypeIRI="&xsd;dateTime">'15-06-1947'</Literal> 
-</DataPropertyAssertion><DataPropertyAssertion> 
- <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#Crisma"/> 
+ <NamedIndividual IRI="#ev16_05"/> 
  <Literal datatypeIRI="&xsd;string">'Igreja de Paranhos'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#nome"/>
@@ -823,11 +1046,11 @@
  <Literal datatypeIRI="&xsd;string">'lembranca da Primeira Comunhão de Maria Angélica Andresen de Castro Henriques e Elsa Andresen de Castro Henriques Celebrada na Igreja de Paranhos em 19 de Junho de 1932'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev16_06"/> 
  <Literal datatypeIRI="&xsd;dateTime">'19-06-1932'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev16_06"/> 
  <Literal datatypeIRI="&xsd;string">'Igreja de Paranhos'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#nome"/>
@@ -847,11 +1070,11 @@
  <Literal datatypeIRI="&xsd;string">'Piedosa lembranca da comunhão solene de Maria Luiza Henriques feita na Sé Catedral do Porto em 24 de maio de 1931'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <NamedIndividual IRI="#ev16_07"/> 
  <Literal datatypeIRI="&xsd;dateTime">'24-05-1931'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <NamedIndividual IRI="#ev16_07"/> 
  <Literal datatypeIRI="&xsd;string">'Sé Catedral do Porto'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#nome"/>
@@ -871,11 +1094,11 @@
  <Literal datatypeIRI="&xsd;string">'Comunhão Solene de Carlos Manuel Henriques Feita na Igreja de Campanhã a 10 de Maio de 1936'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <NamedIndividual IRI="#ev16_08"/> 
  <Literal datatypeIRI="&xsd;dateTime">'10-05-1936'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <NamedIndividual IRI="#ev16_08"/> 
  <Literal datatypeIRI="&xsd;string">'Igreja de Campanhã'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -991,11 +1214,11 @@
  <Literal datatypeIRI="&xsd;string">'João Manuel'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev17"/> 
  <Literal datatypeIRI="&xsd;dateTime">'02-07-1939'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev17"/> 
  <Literal datatypeIRI="&xsd;string">'Igreja de Nevogilde'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1068,7 +1291,7 @@
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#conteudo"/>
  <NamedIndividual IRI="#pag18_06"/> 
- <Literal datatypeIRI="&xsd;string">'Recordação da sua comunhão solene feita em Nevogilde a 2 Julgo de 1939 Maria Alice'</Literal> 
+ <Literal datatypeIRI="&xsd;string">'Recordação da sua comunhão solene feita em Nevogilde a 2 Julho de 1939 Maria Alice'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
  <NamedIndividual IRI="#pag18_07"/> 
@@ -1139,11 +1362,11 @@
  <Literal datatypeIRI="&xsd;string">'Joaquim Sabino Cyrne Rangel Pamplona'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <NamedIndividual IRI="#ev19_01"/> 
  <Literal datatypeIRI="&xsd;dateTime">'11-06-1944'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <NamedIndividual IRI="#ev19_01"/> 
  <Literal datatypeIRI="&xsd;string">'Igreja de Nevogilde'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1163,11 +1386,11 @@
  <Literal datatypeIRI="&xsd;string">'Alexandre Rangel Pamplona'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev19_02"/> 
  <Literal datatypeIRI="&xsd;dateTime">'24-07-1948'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev19_02"/> 
  <Literal datatypeIRI="&xsd;string">'Igreja de Nevogilde'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1187,11 +1410,11 @@
  <Literal datatypeIRI="&xsd;string">'Carmen d´Araujo Rangel Pamplona'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev19_03"/> 
  <Literal datatypeIRI="&xsd;dateTime">'05-07-1935'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev19_03"/> 
  <Literal datatypeIRI="&xsd;string">'Igreja de Nevogilde'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1211,11 +1434,11 @@
  <Literal datatypeIRI="&xsd;string">'José Manuel Pinto da Silva Cardoso Pereira'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev19_04"/> 
  <Literal datatypeIRI="&xsd;dateTime">'19-03-1935'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev19_04"/> 
  <Literal datatypeIRI="&xsd;string">'Igreja de Nevogilde'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1235,11 +1458,11 @@
  <Literal datatypeIRI="&xsd;string">'Maria Helena d´Araujo Rangel Pamplona'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev19_05"/> 
  <Literal datatypeIRI="&xsd;dateTime">'02-07-1939'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev19_05"/> 
  <Literal datatypeIRI="&xsd;string">'Igreja de Nevogilde - Foz'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1259,7 +1482,7 @@
  <Literal datatypeIRI="&xsd;string">'João Manoel d´Araujo Rangel Pamplona'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev19_06"/> 
  <Literal datatypeIRI="&xsd;dateTime">'28-04-1943'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1367,11 +1590,11 @@
  <Literal datatypeIRI="&xsd;string">'Maria Luizados Santos Rangel Pamplona'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <NamedIndividual IRI="#ev20"/> 
  <Literal datatypeIRI="&xsd;dateTime">'26-04-1959'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <NamedIndividual IRI="#ev20"/> 
  <Literal datatypeIRI="&xsd;string">'Igreja Paroquial de Matosinhos'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1395,7 +1618,7 @@
  <Literal datatypeIRI="&xsd;string">'Maria Fernanda Gomes'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Festa_Religiosa"/> 
+ <NamedIndividual IRI="#ev21_01"/> 
  <Literal datatypeIRI="&xsd;dateTime">'29-10-1940'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1415,7 +1638,7 @@
  <Literal datatypeIRI="&xsd;string">'Maria Luíza Pinto Salgado'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev21_02"/> 
  <Literal datatypeIRI="&xsd;dateTime">'02-07-1939'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1431,7 +1654,7 @@
  <Literal datatypeIRI="&xsd;string">'Eu cá sou anfitrião cumpro o dever social discursos, palestras não, mas a todos um bom Natal!  Natal 82'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Festa_Religiosa"/> 
+ <NamedIndividual IRI="#ev21_03"/> 
  <Literal datatypeIRI="&xsd;dateTime">'1982'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1447,11 +1670,11 @@
  <Literal datatypeIRI="&xsd;string">'úlitmas férias que passámos todos em S.Veríssimo... Visita Pascal em Figueiredo -- Amares P.Fernando 22/4/73'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#pag21_04"/> 
+ <NamedIndividual IRI="#ev21_04"/> 
  <Literal datatypeIRI="&xsd;dateTime">'22/04/1973'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#pag21_04"/> 
+ <NamedIndividual IRI="#ev21_04"/> 
  <Literal datatypeIRI="&xsd;string">'Figueiredo Amares'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1475,11 +1698,11 @@
  <Literal datatypeIRI="&xsd;string">'Nossa Senhora'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#pag21_05"/> 
+ <NamedIndividual IRI="#ev21_05"/> 
  <Literal datatypeIRI="&xsd;dateTime">'11-4-1956'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#pag21_05"/> 
+ <NamedIndividual IRI="#ev21_05"/> 
  <Literal datatypeIRI="&xsd;string">'Fátima'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1519,7 +1742,7 @@
  <Literal datatypeIRI="&xsd;string">'Maria'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Comunhao_Solene"/> 
+ <NamedIndividual IRI="#ev22_02"/> 
  <Literal datatypeIRI="&xsd;dateTime">'11-04-1938'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1539,11 +1762,11 @@
  <Literal datatypeIRI="&xsd;string">'Lina'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#pag22_03"/> 
+ <NamedIndividual IRI="#ev22_03"/> 
  <Literal datatypeIRI="&xsd;dateTime">'16-06-1943'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#pag22_03"/> 
+ <NamedIndividual IRI="#ev22_03"/> 
  <Literal datatypeIRI="&xsd;string">'Porto'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1567,7 +1790,7 @@
  <Literal datatypeIRI="&xsd;string">'Maria Cândida Vila'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#pag22_04"/> 
+ <NamedIndividual IRI="#ev22_04"/> 
  <Literal datatypeIRI="&xsd;dateTime">'21-02-1941'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1591,7 +1814,7 @@
  <Literal datatypeIRI="&xsd;string">'Maria Manuela'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Festa_Religiosa"/> 
+ <NamedIndividual IRI="#ev22_05"/> 
  <Literal datatypeIRI="&xsd;dateTime">'13-12-1939'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1611,7 +1834,7 @@
  <Literal datatypeIRI="&xsd;string">'Maria Manuela'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Aniversario"/> 
+ <NamedIndividual IRI="#ev22_06"/> 
  <Literal datatypeIRI="&xsd;dateTime">'06-03-1939'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1631,7 +1854,7 @@
  <Literal datatypeIRI="&xsd;string">'Maria Helana Figueiredo'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Aniversario"/> 
+ <NamedIndividual IRI="#ev22_07"/> 
  <Literal datatypeIRI="&xsd;dateTime">'06-03-1939'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1655,7 +1878,7 @@
  <Literal datatypeIRI="&xsd;string">'Jicas'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#pag22_08"/> 
+ <NamedIndividual IRI="#ev22_08"/> 
  <Literal datatypeIRI="&xsd;dateTime">'02-12-1943'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1675,11 +1898,11 @@
  <Literal datatypeIRI="&xsd;string">'Maria Helena Ribas Figueiredo'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev23_01"/> 
  <Literal datatypeIRI="&xsd;dateTime">'26-06-1938'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev23_01"/> 
  <Literal datatypeIRI="&xsd;string">'Igreja de S.Pedro do Monte Farelães'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1699,11 +1922,11 @@
  <Literal datatypeIRI="&xsd;string">'Patrícia Dias'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Crisma"/> 
+ <NamedIndividual IRI="#ev23_02"/> 
  <Literal datatypeIRI="&xsd;dateTime">'15-05-2016'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#Crisma"/> 
+ <NamedIndividual IRI="#ev23_02"/> 
  <Literal datatypeIRI="&xsd;string">'Catedral de Bragança'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1723,11 +1946,11 @@
  <Literal datatypeIRI="&xsd;string">'Maria de Lourdes Pinto Salgado'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev23_03"/> 
  <Literal datatypeIRI="&xsd;dateTime">'27-07-1937'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev23_03"/> 
  <Literal datatypeIRI="&xsd;string">'Igreja de Nevogilde'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#tipo"/>
@@ -1747,11 +1970,11 @@
  <Literal datatypeIRI="&xsd;string">'Patrícia'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#data"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev23_04"/> 
  <Literal datatypeIRI="&xsd;dateTime">'18-05-2008'</Literal> 
 </DataPropertyAssertion><DataPropertyAssertion> 
  <DataProperty IRI="#local"/>
- <NamedIndividual IRI="#Primeira_Comunhao"/> 
+ <NamedIndividual IRI="#ev23_04"/> 
  <Literal datatypeIRI="&xsd;string">'Sé de Bragança'</Literal> 
 </DataPropertyAssertion><DataPropertyDomain> 
  <DataProperty IRI="#nome"/>
@@ -1962,20 +2185,6 @@
  </DataPropertyDomain> 
  <DataPropertyRange> 
  <DataProperty IRI="#conteudo"/> 
- <Datatype abbreviatedIRI="xsd:string"/> 
-</DataPropertyRange><DataPropertyDomain> 
- <DataProperty IRI="#data"/>
- <Class IRI="#Evento"/> 
- </DataPropertyDomain> 
- <DataPropertyRange> 
- <DataProperty IRI="#data"/> 
- <Datatype abbreviatedIRI="xsd:dateTime"/> 
-</DataPropertyRange><DataPropertyDomain> 
- <DataProperty IRI="#local"/>
- <Class IRI="#Evento"/> 
- </DataPropertyDomain> 
- <DataPropertyRange> 
- <DataProperty IRI="#local"/> 
  <Datatype abbreviatedIRI="xsd:string"/> 
 </DataPropertyRange><DataPropertyDomain> 
  <DataProperty IRI="#data"/>
@@ -3654,7 +3863,7 @@
  <DataProperty IRI="#local"/>
  <Class IRI="#Evento"/> 
  </DataPropertyDomain> 
- <DataPropertyRange> 	
+ <DataPropertyRange> 
  <DataProperty IRI="#local"/> 
  <Datatype abbreviatedIRI="xsd:string"/> 
 </DataPropertyRange></Ontology>
