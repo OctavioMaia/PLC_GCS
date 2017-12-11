@@ -2,7 +2,7 @@ Ontologia Pagelas
 
 conceitos { Pagela[tipo:string, imagem:byte, conteudo:string], Pessoa[nome:string],
             Santo[nome:string, historia:string], Evento[data:dateTime, local:string],
-            Festa_Religiosa, Batizado, Primeira_Comunhao, Comunhao_Solene, Casamento, Morte, Aniversario
+            Festa_Religiosa, Batizado, Primeira_Comunhao, Comunhao_Solene, Casamento, Morte, Aniversario, Crisma
           }
 individuos { pes16_01, pes16_02_01, pes16_02_02, pes16_03_01, pes16_03_02, pes16_04, pes16_05, pes16_06_01, pes16_06_02, pes16_07, pes16_08, 
 			 pag16_01, pag16_02, pag16_03, pag16_04, pag16_05, pag16_06, pag16_07, pag16_08,
@@ -15,6 +15,7 @@ individuos { pes16_01, pes16_02_01, pes16_02_02, pes16_03_01, pes16_03_02, pes16
 			 pes20_01, pes20_02,
 			 pag20_01, pag20_02, pag20_03, pag20_04, pag20_05, pag20_06, pag20_07, pag20_08, 
 			 pes21_01_01, pes21_01_02, pes21_02, pes21_05,
+			 santo21_05,
 			 pag21_01, pag21_02, pag21_03, pag21_04, pag21_05,
 			 pag22_01, pag22_02, pag22_03, pag22_04, pag22_05, pag22_06, pag22_07, pag22_08, 
 			 pes22_01_01, pes22_01_02, pes22_02_01, pes22_03_01, pes22_04_01, pes22_04_02, pes22_05_01, pes22_05_02,
