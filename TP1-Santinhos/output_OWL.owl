@@ -18,6 +18,7 @@
  <Class IRI="#Casamento"/></Declaration><Declaration> 
  <Class IRI="#Morte"/></Declaration><Declaration> 
  <Class IRI="#Aniversario"/></Declaration><Declaration> 
+ <Class IRI="#Crisma"/></Declaration><Declaration> 
  <DataProperty IRI="#tipo"/>
 </Declaration><Declaration> 
  <DataProperty IRI="#imagem"/>
@@ -189,6 +190,8 @@
  <NamedIndividual IRI="#pes21_02"/>
 </Declaration><Declaration> 
  <NamedIndividual IRI="#pes21_05"/>
+</Declaration><Declaration> 
+ <NamedIndividual IRI="#santo21_05"/>
 </Declaration><Declaration> 
  <NamedIndividual IRI="#pag21_01"/>
 </Declaration><Declaration> 
@@ -3651,7 +3654,7 @@
  <DataProperty IRI="#local"/>
  <Class IRI="#Evento"/> 
  </DataPropertyDomain> 
- <DataPropertyRange> 
+ <DataPropertyRange> 	
  <DataProperty IRI="#local"/> 
  <Datatype abbreviatedIRI="xsd:string"/> 
 </DataPropertyRange></Ontology>

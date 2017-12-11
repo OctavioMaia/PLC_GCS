@@ -353,9 +353,8 @@ triplos {
 		  pag23_04 = iof => Pagela[tipo='lembranca', imagem='pag23_04.jpg', conteudo='1ªComunhão Sé de Bragança Patrícia 18 de Maio de 2008  Beijinhos da Patrícia'];
 		  pes23_04 = iof => Pessoa[nome='Patrícia'];
 		  pes23_04 = oferece => pag23_04;
-          Primeira_Comunhao = is-a => Evento[data='18-05-2008', local='Sé de Bragança'];
-          pag23_04 = associada => Primeira_Comunhao
-		  
-		  
+          ev23_04 = iof => Evento[data='18-05-2008', local='Sé de Bragança'];
+		  pag23_04 = associada => ev23_04;
+		  pag23_04 = iof => Primeira_Comunhao;
 		  
         }.
