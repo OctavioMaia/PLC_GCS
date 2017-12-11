@@ -63,6 +63,9 @@ ontologia
          for(String str: dot) {
              writer.write(str);
          }
+         writer.flush();
+         writer.close();
+         System.out.println("Gravei DOT");
        }catch(Exception e){
          System.out.println("Erro DOT");
        }
@@ -73,6 +76,9 @@ ontologia
          for(String str: owl) {
              writer.write(str);
          }
+         writer.flush();
+         writer.close();
+         System.out.println("Gravei OWL");
        }catch(Exception e){
          System.out.println("Erro OWL");
        }
