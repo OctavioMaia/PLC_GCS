@@ -3526,4 +3526,132 @@
  <Class IRI="#Evento"/> 
  </DataPropertyDomain> 
  <DataPropertyRange> 
- <DataProperty IRI="#
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#tipo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#tipo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#imagem"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#imagem"/> 
+ <Datatype abbreviatedIRI="xsd:byte"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#conteudo"/>
+ <Class IRI="#Pagela"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#conteudo"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#nome"/>
+ <Class IRI="#Pessoa"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#nome"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#data"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#data"/> 
+ <Datatype abbreviatedIRI="xsd:dateTime"/> 
+</DataPropertyRange><DataPropertyDomain> 
+ <DataProperty IRI="#local"/>
+ <Class IRI="#Evento"/> 
+ </DataPropertyDomain> 
+ <DataPropertyRange> 
+ <DataProperty IRI="#local"/> 
+ <Datatype abbreviatedIRI="xsd:string"/> 
+</DataPropertyRange></Ontology>
