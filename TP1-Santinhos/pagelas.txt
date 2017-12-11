@@ -21,7 +21,14 @@ individuos { pes16_01, pes16_02_01, pes16_02_02, pes16_03_01, pes16_03_02, pes16
 			 pes22_01_01, pes22_01_02, pes22_02_01, pes22_03_01, pes22_04_01, pes22_04_02, pes22_05_01, pes22_05_02,
 			 pes22_06_01, pes22_06_02, pes22_07_01, pes22_08_01, pes22_08_02,	 
 			 pes23_01, pes23_02, pes23_03, pes23_04,
-			 pag23_01, pag23_02, pag23_03, pag23_04  }
+			 pag23_01, pag23_02, pag23_03, pag23_04,
+			 ev16_01, ev16_02, ev16_03, ev16_04, ev16_05, ev16_06, ev16_07, ev16_08,
+			 ev17
+			 ev19_01, ev19_02, ev19_03, ev19_04, ev19_05, ev19_06,
+			 ev20,
+			 ev21_01, ev21_02, ev21_03, ev21_04,
+			 ev22_01, ev22_02, ev22_03, ev22_04, ev22_05, ev22_06, ev22_07, ev22_08,
+			 ev23_01, ev23_02, ev23_03, ev23_04}
 relacoes { dedicada, recebe, oferece, associada, tem }
 triplos {
           %%tipos de pagelas: -lembranca(para muitos) -oferta(para uma pessoa) -comemoracao 
@@ -29,58 +36,65 @@ triplos {
 		  pes16_01 = iof => Pessoa[nome='Maria Luiza Henriques'];
 		  pag16_01 = iof => Pagela[tipo='lembranca', imagem='pag16_01.jpg', conteudo='Piedosa lembranca da comunhão solene de Maria Luiza Henriques feita na Sé Catedral do Porto em 24 de maio de 1931'];
 		  pes16_01 = oferece => pag16_01;
-		  Comunhao_Solene = is-a => Evento[data='24-05-1931', local='Sé Catedral do Porto'];
-		  pag16_01 = associada => Comunhao_Solene;
+		  ev16_01 = iof => Evento[data='24-05-1931', local='Sé Catedral do Porto'];
+		  pag16_01 = associada => ev16_01;
+		  pag16_01 = iof => Comunhao_Solene;
 		  
 		  pes16_02_01 = iof => Pessoa[nome='Maria Angélica Andresen de Castro Henriques'];
 		  pes16_02_02 = iof => Pessoa[nome='Elsa Andresen de Castro Henriques'];
 		  pag16_02 = iof => Pagela[tipo='lembranca', imagem='pag16_02.jpg', conteudo='lembranca da Primeira Comunhão de Maria Angélica Andresen de Castro Henriques e Elsa Andresen de Castro Henriques Celebrada na Igreja de Paranhos em 19 de Junho de 1932'];
 		  pes16_02_01 = oferece => pag16_02;
 		  pes16_02_02 = oferece => pag16_02;
-		  Primeira_Comunhao = is-a => Evento[data='19-06-1932', local='Igreja de Paranhos'];
-		  pag16_02 = associada => Primeira_Comunhao;
+		  ev16_02 = iof => Evento[data='19-06-1932', local='Igreja de Paranhos'];
+		  pag16_02 = associada => ev16_02;
+		  pag16_02 = iof => Primeira_Comunhao;
 		  
 		  pes16_03_01 = iof => Pessoa[nome='Maria Angélica Andresen de Castro Henriques'];
 		  pes16_03_02 = iof => Pessoa[nome='Elsa Andresen de Castro Henriques'];
 		  pag16_03 = iof => Pagela[tipo='lembranca', imagem='pag16_03.jpg', conteudo='lembranca da Primeira Comunhão de Maria Angélica Andresen de Castro Henriques e Elsa Andresen de Castro Henriques Celebrada na Igreja de Paranhos em 19 de Junho de 1932'];
 		  pes16_03_01 = oferece => pag16_03;
 		  pes16_03_02 = oferece => pag16_03;
-		  Primeira_Comunhao = is-a => Evento[data='19-06-1932', local='Igreja de Paranhos'];
-		  pag16_03 = associada => Primeira_Comunhao;
+		  ev16_03 = iof => Evento[data='19-06-1932', local='Igreja de Paranhos'];
+		  pag16_03 = associada => ev16_03;
+		  pag16_03 = iof => Primeira_Comunhao;
 		  
 		  pes16_04 = iof => Pessoa[nome='Manuel Antonio Andresen de Castro Henriques'];
 		  pag16_04= iof => Pagela[tipo='lembranca', imagem='pag16_04.jpg', conteudo='lembranca da Primeira Comunhão de Manuel Antonio Andresen de Castro Henriques celebrada na Igreja de Paranhos em 21 de Junho de 1936'];
 		  pes16_04 = oferece => pag16_04;
-		  Primeira_Comunhao = is-a => Evento[data='21-06-1936', local='Igreja de Paranhos'];
-		  pag16_04 = associada => Primeira_Comunhao;
+		  ev16_04 = iof => Evento[data='21-06-1936', local='Igreja de Paranhos'];
+		  pag16_04 = associada => ev16_04;
+		  pag16_04 = iof => Primeira_Comunhao;
 		  
 		  pes16_05 = iof => Pessoa[nome='Guilherme António Andresen de Castro Henriques'];
 		  pag16_05= iof => Pagela[tipo='lembranca', imagem='pag16_05.jpg', conteudo='lembranca da Primeira Comunhão e Confirmação de Guilherme António Andresen de Castro Henriques recebidas na Igreja de Paranhos 15-VI-1947'];
 		  pes16_05 = oferece => pag16_05;
-		  Primeira_Comunhao = is-a => Evento[data='15-06-1947', local='Igreja de Paranhos'];
-		  Crisma = is-a => Evento[data='15-06-1947', local='Igreja de Paranhos'];
-		  pag16_05 = associada => Primeira_Comunhao;
-		  pag16_05 = associada => Crisma;
+		  ev16_05 = iof => Evento[data='15-06-1947', local='Igreja de Paranhos'];
+		  pag16_05 = associada => ev16_05;
+		  pag16_05 = iof => Crisma;
+		  pag16_05 = iof => Primeira_Comunhao;
 		  
 		  pes16_06_01 = iof => Pessoa[nome='Maria Angélica Andresen de Castro Henriques'];
 		  pes16_06_02 = iof => Pessoa[nome='Elsa Andresen de Castro Henriques'];
 		  pag16_06 = iof => Pagela[tipo='lembranca', imagem='pag16_06.jpg', conteudo='lembranca da Primeira Comunhão de Maria Angélica Andresen de Castro Henriques e Elsa Andresen de Castro Henriques Celebrada na Igreja de Paranhos em 19 de Junho de 1932'];
 		  pes16_06_01 = oferece => pag16_06;
 		  pes16_06_02 = oferece => pag16_06;
-		  Primeira_Comunhao = is-a => Evento[data='19-06-1932', local='Igreja de Paranhos'];
-		  pag16_06 = associada => Primeira_Comunhao;
+		  ev16_06 = iof => Evento[data='19-06-1932', local='Igreja de Paranhos'];
+		  pag16_06 = associada => ev16_06;
+		  pag16_06 = iof => Primeira_Comunhao;
 		  
 		  pes16_07 = iof => Pessoa[nome='Maria Luiza Henriques'];
 		  pag16_07 = iof => Pagela[tipo='lembranca', imagem='pag16_07.jpg', conteudo='Piedosa lembranca da comunhão solene de Maria Luiza Henriques feita na Sé Catedral do Porto em 24 de maio de 1931'];
 		  pes16_07 = oferece => pag16_07;
-		  Comunhao_Solene = is-a => Evento[data='24-05-1931', local='Sé Catedral do Porto'];
-		  pag16_07 = associada => Comunhao_Solene;
+		  ev16_07 = iof => Evento[data='24-05-1931', local='Sé Catedral do Porto'];
+		  pag16_07 = associada => ev16_07;
+		  pag16_07 = iof => Comunhao_Solene;
 		  
 		  pes16_08 = iof => Pessoa[nome='Carlos Manuel Henriques'];
 		  pag16_08 = iof => Pagela[tipo='lembranca', imagem='pag16_08.jpg', conteudo='Comunhão Solene de Carlos Manuel Henriques Feita na Igreja de Campanhã a 10 de Maio de 1936'];
 		  pes16_08 = oferece => pag16_08;
-		  Comunhao_Solene = is-a => Evento[data='10-05-1936', local='Igreja de Campanhã'];
-		  pag16_08 = associada => Comunhao_Solene;
+		  ev16_08 = iof => Evento[data='10-05-1936', local='Igreja de Campanhã'];
+		  pag16_08 = associada => ev16_08;
+		  pag16_08 = iof => Comunhao_Solene;
 		  
 		  
 		  %%Pagina 17
@@ -110,15 +124,24 @@ triplos {
 		  pes17_05 = oferece => pag17_05;
 		  pes17_07 = oferece => pag17_07;
 		  
-		  Primeira_Comunhao = is-a => Evento[data='02-07-1939', local='Igreja de Nevogilde'];
-		  pag17_01 = associada => Primeira_Comunhao;
-		  pag17_02 = associada => Primeira_Comunhao;
-		  pag17_03 = associada => Primeira_Comunhao;
-		  pag17_04 = associada => Primeira_Comunhao;
-		  pag17_05 = associada => Primeira_Comunhao;
-		  pag17_06 = associada => Primeira_Comunhao;
-		  pag17_07 = associada => Primeira_Comunhao;
-		  pag17_08 = associada => Primeira_Comunhao;
+		  ev17 = iof => Evento[data='02-07-1939', local='Igreja de Nevogilde'];
+		  pag17_01 = associada => ev17;
+		  pag17_02 = associada => ev17;
+		  pag17_03 = associada => ev17;
+		  pag17_04 = associada => ev17;
+		  pag17_05 = associada => ev17;
+		  pag17_06 = associada => ev17;
+		  pag17_07 = associada => ev17;
+		  pag17_08 = associada => ev17;
+		  
+		  pag17_01 = iof => Primeira_Comunhao;
+		  pag17_02 = iof => Primeira_Comunhao;
+		  pag17_03 = iof => Primeira_Comunhao;
+		  pag17_04 = iof => Primeira_Comunhao;
+		  pag17_05 = iof => Primeira_Comunhao;
+		  pag17_06 = iof => Primeira_Comunhao;
+		  pag17_07 = iof => Primeira_Comunhao;
+		  pag17_08 = iof => Primeira_Comunhao;
 		  
 		  
 		  %%Pagina 18
@@ -127,7 +150,7 @@ triplos {
 		  pag18_03 = iof => Pagela[tipo='oferta', imagem='pag18_03.jpg', conteudo='Para que se lembre sempre de pedir à Santa Terezinha pela tia Celice. No dia da sua 1ªComunhão 2 de Julho de 1939 Nevogilde'];
 		  pag18_04 = iof => Pagela[tipo='oferta', imagem='pag18_04.jpg', conteudo='Que os anjos que te acompanharam à tua 1ª Comunhão sejam os teus guias pela vida... 2-7-939'];
 		  pag18_05 = iof => Pagela[tipo='oferta', imagem='pag18_05.jpg', conteudo='que a sua primeira comunhão seja a sua melhor esperança e a sua mais doce lembrança 2-7-1939 M.C.M'];
-		  pag18_06 = iof => Pagela[tipo='oferta', imagem='pag18_06.jpg', conteudo='Recordação da sua comunhão solene feita em Nevogilde a 2 Julgo de 1939 Maria Alice'];
+		  pag18_06 = iof => Pagela[tipo='oferta', imagem='pag18_06.jpg', conteudo='Recordação da sua comunhão solene feita em Nevogilde a 2 Julho de 1939 Maria Alice'];
 		  pag18_07 = iof => Pagela[tipo='oferta', imagem='pag18_07.jpg', conteudo='Oferece com muitos parabéns pela tua comunhão a tua muito amigo que nunca te esqueçe Maria Alice Salvé dia de 2-7-939'];
 		  pag18_08 = iof => Pagela[tipo='oferta', imagem='pag18_08.jpg', conteudo='2-7-939 Que o Bom Pastor a guie sempre durante a vida: é o que pede neste grande dia, a muito amiga. Maria Filomena'];
 		  
@@ -155,52 +178,67 @@ triplos {
 		  pes18_07 = oferece => pag18_07;
 		  pes18_08 = oferece => pag18_08;
 		  
-		  pag18_01 = associada => Primeira_Comunhao;
-		  pag18_02 = associada => Primeira_Comunhao;
-		  pag18_03 = associada => Primeira_Comunhao;
-		  pag18_04 = associada => Primeira_Comunhao;
-		  pag18_05 = associada => Primeira_Comunhao;
-		  pag18_06 = associada => Primeira_Comunhao;
-		  pag18_07 = associada => Primeira_Comunhao;
-		  pag18_08 = associada => Primeira_Comunhao;
+		  pag18_01 = associada => ev17;
+		  pag18_02 = associada => ev17;
+		  pag18_03 = associada => ev17;
+		  pag18_04 = associada => ev17;
+		  pag18_05 = associada => ev17;
+		  pag18_06 = associada => ev17;
+		  pag18_07 = associada => ev17;
+		  pag18_08 = associada => ev17;
+		  
+		  pag18_01 = iof => Primeira_Comunhao;
+		  pag18_02 = iof => Primeira_Comunhao;
+		  pag18_03 = iof => Primeira_Comunhao;
+		  pag18_04 = iof => Primeira_Comunhao;
+		  pag18_05 = iof => Primeira_Comunhao;
+		  pag18_06 = iof => Primeira_Comunhao;
+		  pag18_07 = iof => Primeira_Comunhao;
+		  pag18_08 = iof => Primeira_Comunhao;
 		  
 		  
 		  %%Pagina19
           pag19_01 = iof => Pagela[tipo='lembranca', imagem='pag19_01.jpg', conteudo='Lembraça da Comunhão Solene de Joaquim Sabino Cyrne Rangel Pamplona feita na igreja de Nevogilde a 11 de Junho de 1944'];
           pes19_01 = iof => Pessoa[nome='Joaquim Sabino Cyrne Rangel Pamplona'];
           pes19_01 = oferece => pag19_01;
-          Comunhao_Solene = is-a => Evento[data='11-06-1944', local='Igreja de Nevogilde'];
-          pag19_01 = associada => Comunhao_Solene;
+          ev19_01 = iof => Evento[data='11-06-1944', local='Igreja de Nevogilde'];
+          pag19_01 = associada => ev19_01;
+		  pag19_01 = iof => Comunhao_Solene;
 
           pag19_02 = iof => Pagela[tipo='lembranca', imagem='pag19_02.jpg', conteudo='Lembrança da Primeira Comunhão de Alexandre Rangel Pamplona feita na Igreja de Nevogilde em 24 de Julho de 1948'];
           pes19_02 = iof => Pessoa[nome='Alexandre Rangel Pamplona'];
           pes19_02 = oferece => pag19_02;
-          Primeira_Comunhao = is-a => Evento[data='24-07-1948', local='Igreja de Nevogilde'];
-          pag19_02 = associada => Primeira_Comunhao;
+          ev19_02 = iof => Evento[data='24-07-1948', local='Igreja de Nevogilde'];
+          pag19_02 = associada => ev19_02;
+		  pag19_02 = iof => Primeira_Comunhao;
 
           pag19_03 = iof => Pagela[tipo='lembranca', imagem='pag19_03.jpg', conteudo='Lembrança da Primeira Comunhão de Carmen d´Araujo Rangel Pamplona feita na Igreja de Nevogilde em 5 de Julho de 1935'];
           pes19_03 = iof => Pessoa[nome='Carmen d´Araujo Rangel Pamplona'];
           pes19_03 = oferece => pag19_03;
-          Primeira_Comunhao = is-a => Evento[data='05-07-1935', local='Igreja de Nevogilde'];
-          pag19_03 = associada => Primeira_Comunhao;
+          ev19_03 = iof => Evento[data='05-07-1935', local='Igreja de Nevogilde'];
+          pag19_03 = associada => ev19_03;
+		  pag19_03 = iof => Primeira_Comunhao;
 
           pag19_04 = iof => Pagela[tipo='lembranca', imagem='pag19_04.jpg', conteudo='Lembrança da Primeira Comunhão de José Manuel Pinto da Silva Cardoso Pereira feita na Igreja de Nevogilde em 19 de Março de 1953'];
           pes19_04 = iof => Pessoa[nome='José Manuel Pinto da Silva Cardoso Pereira'];
           pes19_04 = oferece => pag19_04;
-          Primeira_Comunhao = is-a => Evento[data='19-03-1935', local='Igreja de Nevogilde'];
-          pag19_04 = associada => Primeira_Comunhao;
+          ev19_04 = iof => Evento[data='19-03-1935', local='Igreja de Nevogilde'];
+          pag19_04 = associada => ev19_04;
+		  pag19_04 = iof => Primeira_Comunhao;
 
           pag19_05 = iof => Pagela[tipo='lembranca', imagem='pag19_05.jpg', conteudo='Lembrança da Primeira Comunhão de Maria Helena d´Araujo Rangel Pamplona feita na Igreja de Nevogilde - Foz no dia 2 de Julho de 1939'];
           pes19_05 = iof => Pessoa[nome='Maria Helena d´Araujo Rangel Pamplona'];
           pes19_05 = oferece => pag19_05;
-          Primeira_Comunhao = is-a => Evento[data='02-07-1939', local='Igreja de Nevogilde - Foz'];
-          pag19_05 = associada => Primeira_Comunhao;
+          ev19_05 = iof => Evento[data='02-07-1939', local='Igreja de Nevogilde - Foz'];
+          pag19_05 = associada => ev19_05;
+		  pag19_05 = iof => Primeira_Comunhao;
 
           pag19_06 = iof => Pagela[tipo='lembranca', imagem='pag19_06.jpg', conteudo='Lembrança da Primeira Comunhão de João Manoel d´Araujo Rangel Pamplona feita -- 28 de Abril de 1943'];
           pes19_06 = iof => Pessoa[nome='João Manoel d´Araujo Rangel Pamplona'];
           pes19_06 = oferece => pag19_06;
-          Primeira_Comunhao = is-a => Evento[data='28-04-1943'];
-          pag19_06 = associada => Primeira_Comunhao;
+          ev19_06 = iof => Evento[data='28-04-1943'];
+          pag19_06 = associada => ev19_06;
+		  pag19_06 = iof => Primeira_Comunhao:
 		  
 		  
 		  %%Pagina20
@@ -235,16 +273,25 @@ triplos {
 		  pes20_02 = oferece => pag20_07;
 		  pes20_02 = oferece => pag20_08;
 		  
-          Comunhao_Solene = is-a => Evento[data='26-04-1959', local='Igreja Paroquial de Matosinhos'];
+          ev20 = iof => Evento[data='26-04-1959', local='Igreja Paroquial de Matosinhos'];
 		  
-          pag20_01 = associada => Comunhao_Solene;
-		  pag20_02 = associada => Comunhao_Solene;
-		  pag20_03 = associada => Comunhao_Solene;
-		  pag20_04 = associada => Comunhao_Solene;
-		  pag20_05 = associada => Comunhao_Solene;
-		  pag20_06 = associada => Comunhao_Solene;
-		  pag20_07 = associada => Comunhao_Solene;
-		  pag20_08 = associada => Comunhao_Solene;
+          pag20_01 = associada => ev20;
+		  pag20_02 = associada => ev20;
+		  pag20_03 = associada => ev20;
+		  pag20_04 = associada => ev20;
+		  pag20_05 = associada => ev20;
+		  pag20_06 = associada => ev20;
+		  pag20_07 = associada => ev20;
+		  pag20_08 = associada => ev20;
+		  
+		  pag20_01 = iof => Comunhao_Solene;
+		  pag20_02 = iof => Comunhao_Solene;
+		  pag20_03 = iof => Comunhao_Solene;
+		  pag20_04 = iof => Comunhao_Solene;
+		  pag20_05 = iof => Comunhao_Solene;
+		  pag20_06 = iof => Comunhao_Solene;
+		  pag20_07 = iof => Comunhao_Solene;
+		  pag20_08 = iof => Comunhao_Solene;
 
 		  
 		  %%Pagina21
@@ -253,22 +300,25 @@ triplos {
 		  pes21_01_02 = iof => Pessoa[nome='Maria Fernanda Gomes'];
           pes21_01_01 = recebe => pag21_01;
 		  pes21_01_02 = oferece => pag21_01;
-          Festa_Religiosa = is-a => Evento[data='29-10-1940'];
-          pag21_01 = associada => Festa_Religiosa;
+          ev21_01 = iof => Evento[data='29-10-1940'];
+          pag21_01 = associada => ev21_01;
+		  pag21_01 = iof => Festa_Religiosa;
 		  
 		  pag21_02 = iof => Pagela[tipo='oferta', imagem='pag21_02.jpg', conteudo='Lembrança da primeira comunhão de Maria Luíza Pinto Salgado Nevogilde II-VII-MCMXXXIX'];
 		  pes21_02 = iof => Pessoa[nome='Maria Luíza Pinto Salgado'];
 		  pes21_02 = oferece => pag21_02;
-          Primeira_Comunhao = is-a => Evento[data='02-07-1939'];
-          pag21_02 = associada => Primeira_Comunhao;
+          ev21_02 = iof => Evento[data='02-07-1939'];
+          pag21_02 = associada => ev21_02;
+		  pag21_02 = iof => Primeira_Comunhao;
 		  
 		  pag21_03 = iof => Pagela[tipo='comemoracao', imagem='pag21_03.jpg', conteudo='Eu cá sou anfitrião cumpro o dever social discursos, palestras não, mas a todos um bom Natal!  Natal 82'];
-          Festa_Religiosa = is-a => Evento[data='1982'];
-          pag21_03 = associada => Festa_Religiosa;
+          ev21_03 = iof => Evento[data='1982'];
+          pag21_03 = associada => ev21_03;
+		  pag21_03 = iof => Festa_Religiosa;
 		  
 		  pag21_04 = iof => Pagela[tipo='oferta', imagem='pag21_04.jpg', conteudo='úlitmas férias que passámos todos em S.Veríssimo... Visita Pascal em Figueiredo -- Amares P.Fernando 22/4/73'];
-		  pag21_04 = associada => Evento[data='22/04/1973', local='Figueiredo Amares'];
-		  
+		  ev21_04 = iof => Evento[data='22/04/1973', local='Figueiredo Amares'];
+		  pag21_04 = associada =>  ev21_04;
 		  
 		  pag21_05 = iof => Pagela[tipo='oferta', imagem='pag21_05.jpg', conteudo='Rezei a Nossa Senhora pelo querido "frio" Fátima 11-4-1946 Maria Alice'];
 		  pes21_05 = iof => Pessoa[nome='Maria Alice'];
@@ -282,73 +332,83 @@ triplos {
 		  pes22_01_02 = iof => Pessoa[nome='Pina'];
 		  pes22_01_01 = recebe => pag22_01;
 		  pes22_01_02 = oferece => pag22_01;
-		  Aniversario = is-a => Evento;
-          pag22_01 = associada => Aniversario;
+		  ev22_01 = iof => Evento;
+          pag22_01 = associada => ev22_01;
+		  pag22_01 = iof => Aniversario;
 		  
 		  pag22_02 = iof => Pagela[tipo='lembranca', imagem='pag22_02.jpg', conteudo='Ofereço à minha amiga ... . Como lembrança da Comonhão Solena. Maria 11-4-1938' ];
 		  pes22_02_01 = iof => Pessoa[nome='Maria'];
 		  pes22_02_01 = oferece => pag22_02;
-		  Comunhao_Solene = is-a => Evento[data='11-04-1938'];
-          pag22_02= associada => Comunhao_Solene;
+		  ev22_02 = iof => Evento[data='11-04-1938'];
+          pag22_02 = associada => ev22_02;
+		  pag22_02 = iof => Comunhao_Solene;
 		  
 		  pag22_03 = iof => Pagela[tipo='oferta', imagem='pag22_03.jpg', conteudo='off: este santinho para que nunca te esqueças da amiguinha muito amiga Lina Porto-16-6-943' ];
 		  pes22_03_01 = iof => Pessoa[nome='Lina'];
 		  pes22_03_01 = oferece => pag22_02;
-		  pag22_03 = associada => Evento[data='16-06-1943', local='Porto']; %% Não tem evento especifico. O que fazer?
-		  
+		  ev22_03 = iof => Evento[data='16-06-1943', local='Porto']; %% Não tem evento especifico. O que fazer?
+		  pag22_03 = associada => ev22_03;
 		  
 		  pag22_04 = iof => Pagela[tipo='oferta', imagem='pag22_04.jpg', conteudo='21-2-941 Ofereço este santinho como prova de muita amizade à muita muito amiga Helena Rangel da muito amiga, Maria Cândida Vila...' ];
 		  pes22_04_01 = iof => Pessoa[nome='Helena Rangel'];
 		  pes22_04_02 = iof => Pessoa[nome='Maria Cândida Vila'];
 		  pes22_04_01 = recebe => pag22_04;
 		  pes22_04_02 = oferece => pag22_04;
-		  pag22_04 = associada => Evento[data='21-02-1941'];  %% Não tem evento especifico. O que fazer?
+		  ev22_04 = iof => Evento[data='21-02-1941'];  %% Não tem evento especifico. O que fazer?
+		  pag22_04 = associada => ev22_04;
 		  
 		  pag22_05 = iof => Pagela[tipo='comemoracao', imagem='pag22_05.jpg', conteudo='Ofereço à Lena Rangel como recordação do natal. Da tua companheira maria manuela ... 13-12-939'];
 		  pes22_05_01 = iof => Pessoa[nome='Lena Rangel'];
 		  pes22_05_02 = iof => Pessoa[nome='Maria Manuela'];
 		  pes22_05_01 = recebe => pag22_05;
 		  pes22_05_02 = oferece => pag22_05;
-		  Festa_Religiosa = is-a => Evento[data='13-12-1939'];
-          pag22_05 = associada => Festa_Religiosa;
+		  ev22_05 = is-a => Evento[data='13-12-1939'];
+          pag22_05 = associada => ev22_05;
+		  pag22_05 = iof => Festa_Religiosa;
 		  
 		  pag22_06 = iof => Pagela[tipo='comemoracao', imagem='pag22_06.jpg', conteudo='6-3-939 Envio-te muitos parabens e felicidades no dia de hoje e que se repita por muitos anos na companhia da tua familia. Desta tua aminga. Né 6/3/1939' ];
 		  pes22_06_01 = iof => Pessoa[nome='Maria Manuela'];
 		  pes22_06_02 = oferece => pag22_06;
-		  Aniversario = is-a => Evento[data='06-03-1939'];
-          pag22_06= associada => Aniversario;
+		  ev22_06 = iof => Evento[data='06-03-1939'];
+          pag22_06 = associada => ev22_06;
+		  pag22_06 = iof => Aniversario;
 		  
 		  pag22_07 = iof => Pagela[tipo='oferta', imagem='pag22_07.jpg', conteudo='Que o menino Jesus te cobra de benção e que viva sempre no teu coração Maria Helana Figueiredo 2-7-1989' ];
 		  pes22_07_01 = iof => Pessoa[nome='Maria Helana Figueiredo'];
 		  pes22_07_01 = oferece => pag22_07;
-		  Aniversario = is-a => Evento[data='06-03-1939'];
-          pag22_07= associada => Aniversario;
+		  ev22_07 = iof => Evento[data='06-03-1939'];
+          pag22_07 = associada => ev22_07;
+		  pag22_07 = iof => Aniversario;
 		  
 		  pag22_08 = iof => Pagela[tipo='oferta', imagem='pag22_08.jpg', conteudo='Para a minha querida Lina ofereço esta pequena lembrança a amiga e companheira de sempre Jicas 2-12-1943' ];
 		  pes22_08_01 = iof => Pessoa[nome='Lina'];
 		  pes22_08_02 = iof => Pessoa[nome='Jicas'];
 		  pes22_08_01 = recebe => pag22_08;
 		  pes22_08_02 = oferece => pag22_08;
-		  pag22_08 = associada => Evento[data='02-12-1943'];
+		  ev22_08 = iof => Evento[data='02-12-1943'];
+		  pag22_08 = associada => ev22_08;
 		  
 		  %%Pagina23
 		  pag23_01 = iof => Pagela[tipo='lembranca', imagem='pag23_01.jpg', conteudo='Lembrança da primeira comunhão de Maria Helena Ribas Figueiredo feita na Igreja de S.Pedro do Monte em Farelães no dia 26 de junho de 1938'];
 		  pes23_01 = iof => Pessoa[nome='Maria Helena Ribas Figueiredo'];
 		  pes23_01 = oferece => pag23_01;
-          Primeira_Comunhao = is-a => Evento[data='26-06-1938', local='Igreja de S.Pedro do Monte Farelães'];
-          pag23_01 = associada => Primeira_Comunhao;
+          ev23_01 = iof => Evento[data='26-06-1938', local='Igreja de S.Pedro do Monte Farelães'];
+          pag23_01 = associada => ev23_01;
+		  pag23_01 = iof => Primeira_Comunhao;
 		  
 		  pag23_02 = iof => Pagela[tipo='lembranca', imagem='pag23_02.jpg', conteudo='Lembrança do Crisma Patrícia Dias recebi o sacramento do Crisma na Igreja de Catedral de Bragança no dia 15 de Maio 2016'];
 		  pes23_02 = iof => Pessoa[nome='Patrícia Dias'];
 		  pes23_02 = oferece => pag23_02;
-          Crisma = is-a => Evento[data='15-05-2016', local='Catedral de Bragança'];
-          pag23_02 = associada => Crisma;
+          ev23_02 = iof => Evento[data='15-05-2016', local='Catedral de Bragança'];
+          pag23_02 = associada => ev23_02;
+		  pag23_02 = iof => ev23_02;
 		  
 		  pag23_03 = iof => Pagela[tipo='lembranca', imagem='pag23_03.jpg', conteudo='Lembrança da primeira comunhão de Maria de Lourdes Pinto Salgado feita na Igreja de Nevogilde no dia 27-VI-1937'];
 		  pes23_03 = iof => Pessoa[nome='Maria de Lourdes Pinto Salgado'];
 		  pes23_03 = oferece => pag23_03;
-          Primeira_Comunhao = is-a => Evento[data='27-07-1937', local='Igreja de Nevogilde'];
-          pag23_03 = associada => Primeira_Comunhao;
+          ev23_03 = iof => Evento[data='27-07-1937', local='Igreja de Nevogilde'];
+          pag23_03 = associada => ev23_03;
+		  pag23_03 = iof => Primeira_Comunhao;
 		  
 		  pag23_04 = iof => Pagela[tipo='lembranca', imagem='pag23_04.jpg', conteudo='1ªComunhão Sé de Bragança Patrícia 18 de Maio de 2008  Beijinhos da Patrícia'];
 		  pes23_04 = iof => Pessoa[nome='Patrícia'];
