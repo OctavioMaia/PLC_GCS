@@ -31,12 +31,15 @@ grammar ontoPagelas;
          List<String> dot = new ArrayList <>();
          List<String> owl = new ArrayList <>();
          
+         List<String> html = new ArrayList <>();
+         
          String pal1, pal2, rel1;
          Map<String, String> data = new HashMap<>();
          }
 
 ontologia
 @after{   
+       //OWL
        owl.add("<?xml version=\"1.0\"?>\n" +
                "<!DOCTYPE Ontology[\n" +
                "\t<!ENTITY xsd \"http://www.w3.org/2001/XMLSchema#\">\n" +
@@ -83,6 +86,26 @@ ontologia
          System.out.println("Erro OWL");
        }
        
+       
+       
+       //HTML
+       html.add("<html>\n" +
+                    "<head>\n"+
+                        "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n"+
+                            "<meta charset=\"UTF-8\">\n"+
+                                "<body>\n"+
+                                     "<table>\n"+
+                                        "<tr>\n"+
+                                            "<td width=\"30%\" valign=\"top\">\n"+
+                                                "<h3><a name=\"indice\"></a>Indíce de Pagelas\n"+
+                                                "</h3>\n"+
+                                                "<ol>\n ");
+       html.add("\n</html>");
+       
+       for (String h : html) 
+                System.out.println(h);                                     
+                                            
+
       }
     
         
