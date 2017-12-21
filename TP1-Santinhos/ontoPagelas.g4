@@ -32,6 +32,13 @@ grammar ontoPagelas;
          List<String> owl = new ArrayList <>();
          
          List<String> html = new ArrayList <>();
+         List<String> ind_html = new ArrayList <>();
+         List<String> tit_html = new ArrayList <>();
+         List<String> cont_html = new ArrayList <>();
+         
+         Map<String,List<String>> map = new TreeMap<>();
+         List<String> conteudo = new ArrayList<>();
+         
          
          String pal1, pal2, rel1;
          Map<String, String> data = new HashMap<>();
@@ -85,9 +92,7 @@ ontologia
        }catch(Exception e){
          System.out.println("Erro OWL");
        }
-       
-       
-       
+    
        //HTML
        html.add("<html>\n" +
                     "<head>\n"+
@@ -100,12 +105,36 @@ ontologia
                                                 "<h3><a name=\"indice\"></a>Indíce de Pagelas\n"+
                                                 "</h3>\n"+
                                                 "<ol>\n ");
+       html.addAll(ind_html);
+       html.add("</ol>\n"+
+              "</td>\n"+
+              "<td width=\"70%\">");
+      
+       int i=0;
+       for (Map.Entry<String, List<String>> entry : map.entrySet()){
+           String str = ind_html.get(i);
+           html.add("<hr> \n <h3> <a name=\"id\"></a>"+ str+"</h3>"+"\n<h6> \n[<a href=\"#indice\">Voltar ao indice</a>] \n </h6>");
+
+           for(String s : map.get(str.substring(18,26)))
+               html.add(s);
+           i++;
+       }
+      
        html.add("\n</html>");
        
-       for (String h : html) 
-                System.out.println(h);                                     
-                                            
-
+       //HTML Save
+       try{
+         FileWriter writer = new FileWriter("C:/Users/"+System.getProperty("user.name")+"/Documents/GitHub/PLC_GCS/TP1-Santinhos/pagina.html");
+         for(String str: html) {
+             writer.write(str);
+         }
+         writer.flush();
+         writer.close();
+         System.out.println("Gravei HTML");
+       }catch(Exception e){
+         System.out.println("Erro HTML");
+       }
+       
       }
     
         
@@ -268,8 +297,15 @@ ligacao
           triplos_owl.add("<ObjectPropertyRange> \n <ObjectProperty IRI=\"#" + rel1 + "\"/>" + "\n <Class IRI=\"#" + pal2 + "\"/>" + "\n</ObjectPropertyRange>");          
        }
        
-      }
-        : txtpal{
+       //Indice do html
+       if(pal1.startsWith("pag") && rel1.equals("iof") &&pal2.startsWith("Pagela")){
+       ind_html.add("<li><a href=\"#id\">" + pal1+ "</a></li>"); 
+       tit_html.add("<hr> \n <h3> <a name=\"id\"></a>"+ pal1+"</h3>"+
+       "\n<h6> \n[<a href=\"#indice\">Voltar ao indice</a>] \n </h6>");
+       
+       }
+       
+}        : txtpal{
                  pal1 = $txtpal.texto;
                 }
           '='relacao{rel1 = $relacao.rel;} '=>'
@@ -284,22 +320,77 @@ relacao returns [String rel]
              else $rel = $PAL.text;}
         ;
 
-txtpal returns[String texto, String atrib, String tipo]
-       : TXT {$texto = $TXT.text;} ('['+PAL {$atrib=$PAL.text;} '=' TXT{$tipo = $TXT.text;
+txtpal returns[String texto, String atrib, String tipo]   
+    
+    : TXT {$texto = $TXT.text;} ('['+PAL {$atrib=$PAL.text;} '=' TXT{$tipo = $TXT.text;
                                                                          instAtrib_owl.add("<DataPropertyAssertion> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal1 + "\"/> \n <Literal datatypeIRI=\"&xsd;" + data.get($atrib) + "\">"+ $tipo.replace("\"","") + "</Literal> \n</DataPropertyAssertion>");
-                                                                         atribCon_owl.add("<DataPropertyDomain> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <Class IRI=\"#" + $texto + "\"/> \n </DataPropertyDomain> \n <DataPropertyRange> \n <DataProperty IRI=\"#" + $atrib+ "\"/> \n <Datatype abbreviatedIRI=\"xsd:" +data.get($atrib) +  "\"/> \n</DataPropertyRange>");}
+                                                                         atribCon_owl.add("<DataPropertyDomain> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <Class IRI=\"#" + $texto + "\"/> \n </DataPropertyDomain> \n <DataPropertyRange> \n <DataProperty IRI=\"#" + $atrib+ "\"/> \n <Datatype abbreviatedIRI=\"xsd:" +data.get($atrib) +  "\"/> \n</DataPropertyRange>");
+                                                                         cont_html.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                         if(pal1.startsWith("pag")){
+                                                                            System.out.println("entrei");
+                                                                            
+                                                                            if(map.containsKey(pal1)){
+                                                                                map.get(pal1).add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                            }else{
+                                                                                List<String> str = new ArrayList<>();
+                                                                                str.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                                map.put(pal1,str);
+                                                                             }
+                                                                         }else
+                                                                               System.out.println(pal1);
+                                                                         }
                                     
                                     ( ',' +PAL {$atrib=$PAL.text;} '=' TXT{$tipo = $TXT.text;
                                                                            instAtrib_owl.add("<DataPropertyAssertion> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal1 + "\"/> \n <Literal datatypeIRI=\"&xsd;" +data.get($atrib) +  "\">"+ $tipo.replace("\"","") + "</Literal> \n</DataPropertyAssertion>");
-                                                                           atribCon_owl.add("<DataPropertyDomain> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <Class IRI=\"#" + $texto + "\"/> \n </DataPropertyDomain> \n <DataPropertyRange> \n <DataProperty IRI=\"#" + $atrib+ "\"/> \n <Datatype abbreviatedIRI=\"xsd:" +data.get($atrib) +  "\"/> \n</DataPropertyRange>");})* ']')?
+                                                                           atribCon_owl.add("<DataPropertyDomain> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <Class IRI=\"#" + $texto + "\"/> \n </DataPropertyDomain> \n <DataPropertyRange> \n <DataProperty IRI=\"#" + $atrib+ "\"/> \n <Datatype abbreviatedIRI=\"xsd:" +data.get($atrib) +  "\"/> \n</DataPropertyRange>");
+                                                                           cont_html.add("<p><b>"+$atrib+":  </b>" +$tipo.replace("\"","")+"\n </p>");
+                                                                           if(pal1.startsWith("pag")){
+                                                                            System.out.println("entrei");
+                                                                            
+                                                                            if(map.containsKey(pal1)){
+                                                                                map.get(pal1).add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                            }else{
+                                                                                List<String> str = new ArrayList<>();
+                                                                                str.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                                map.put(pal1,str);
+                                                                             }
+                                                                           }else
+                                                                               System.out.println(pal1);
+                                                                           })* ']')?
       
        
        | PAL {$texto = $PAL.text;} ('['+PAL {$atrib=$PAL.text;} '=' TXT{$tipo = $TXT.text;
                                                                         instAtrib_owl.add("<DataPropertyAssertion> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal1 + "\"/> \n <Literal datatypeIRI=\"&xsd;" +data.get($atrib) +  "\">"+ $tipo.replace("\"","") + "</Literal> \n</DataPropertyAssertion>");
-                                                                        atribCon_owl.add("<DataPropertyDomain> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <Class IRI=\"#" + $texto + "\"/> \n </DataPropertyDomain> \n <DataPropertyRange> \n <DataProperty IRI=\"#" + $atrib+ "\"/> \n <Datatype abbreviatedIRI=\"xsd:" +data.get($atrib) +  "\"/> \n</DataPropertyRange>");}
+                                                                        atribCon_owl.add("<DataPropertyDomain> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <Class IRI=\"#" + $texto + "\"/> \n </DataPropertyDomain> \n <DataPropertyRange> \n <DataProperty IRI=\"#" + $atrib+ "\"/> \n <Datatype abbreviatedIRI=\"xsd:" +data.get($atrib) +  "\"/> \n</DataPropertyRange>");
+                                                                        cont_html.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                        if(pal1.startsWith("pag")){
+                                                                            System.out.println("entrei");
+                                                                            
+                                                                            if(map.containsKey(pal1)){
+                                                                                map.get(pal1).add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                            }else{
+                                                                                List<String> str = new ArrayList<>();
+                                                                                str.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                                map.put(pal1,str);
+                                                                             }
+                                                                         }else
+                                                                               System.out.println($texto);}
                                     ( ',' +PAL {$atrib=$PAL.text;} '=' TXT{$tipo = $TXT.text;
                                                                            instAtrib_owl.add("<DataPropertyAssertion> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal1 + "\"/> \n <Literal datatypeIRI=\"&xsd;" +data.get($atrib) +  "\">"+ $tipo.replace("\"","") + "</Literal> \n</DataPropertyAssertion>");
-                                                                           atribCon_owl.add("<DataPropertyDomain> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <Class IRI=\"#" + $texto + "\"/> \n </DataPropertyDomain> \n <DataPropertyRange> \n <DataProperty IRI=\"#" + $atrib+ "\"/> \n <Datatype abbreviatedIRI=\"xsd:" +data.get($atrib) +  "\"/> \n</DataPropertyRange>");})* ']')?
+                                                                           atribCon_owl.add("<DataPropertyDomain> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <Class IRI=\"#" + $texto + "\"/> \n </DataPropertyDomain> \n <DataPropertyRange> \n <DataProperty IRI=\"#" + $atrib+ "\"/> \n <Datatype abbreviatedIRI=\"xsd:" +data.get($atrib) +  "\"/> \n</DataPropertyRange>");
+                                                                           cont_html.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                           if(pal1.startsWith("pag")){
+                                                                            System.out.println("entrei");
+                                                                            
+                                                                            if(map.containsKey(pal1)){
+                                                                                map.get(pal1).add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                            }else{
+                                                                                List<String> str = new ArrayList<>();
+                                                                                str.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                                map.put($texto,str);
+                                                                             }
+                                                                         }else
+                                                                               System.out.println($texto);})* ']')?
        ;
 
 PAL: [a-zA-Z] [-a-zA-Z_0-9]*;
