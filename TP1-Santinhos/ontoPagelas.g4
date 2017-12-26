@@ -63,7 +63,8 @@ ontologia
        owl.add("</Ontology>");
       
        try{
-         FileWriter writer = new FileWriter("C:/Users/"+System.getProperty("user.name")+"/Documents/GitHub/PLC_GCS/TP1-Santinhos/output_OWL.owl");
+         //FileWriter writer = new FileWriter("C:/Users/"+System.getProperty("user.name")+"/Documents/GitHub/PLC_GCS/TP1-Santinhos/output_OWL.owl");
+         FileWriter writer = new FileWriter("D:/Documentos/GitHub/PLC_GCS/TP1-Santinhos/output_OWL.owl");
          for(String str: owl) {
              writer.write(str);
          }
@@ -76,7 +77,8 @@ ontologia
        
        //DOT
        try{
-         FileWriter writer = new FileWriter("C:/Users/"+System.getProperty("user.name")+"/Documents/GitHub/PLC_GCS/TP1-Santinhos/output_DOT.dot");
+         //FileWriter writer = new FileWriter("C:/Users/"+System.getProperty("user.name")+"/Documents/GitHub/PLC_GCS/TP1-Santinhos/output_DOT.dot");
+         FileWriter writer = new FileWriter("D:/Documentos/GitHub/PLC_GCS/TP1-Santinhos/output_DOT.dot");
          for(String str: dot) {
              writer.write(str);
          }
@@ -108,17 +110,19 @@ ontologia
        int i=0;
        for (Map.Entry<String, List<String>> entry : map.entrySet()){
            String str = ind_html.get(i);
-           html.add("<hr> \n <h3> <a name=\"id\"></a>"+ str+"</h3>"+"\n<h6> \n[<a href=\"#indice\">Voltar ao indice</a>] \n </h6>");
+           html.add("<hr> \n <h3> <a name=\"" + str.substring(14,22) + "\"></a>"+ str+"</h3>"+"\n<h6> \n[<a href=\"#indice\">Voltar ao indice</a>] \n </h6>");
 
-           for(String s : map.get(str.substring(18,26)))
+           for(String s : map.get(str.substring(14,22))){
                html.add(s);
+           }
            i++;
        }
       
        html.add("\n</html>");
        
        try{
-         FileWriter writer = new FileWriter("C:/Users/"+System.getProperty("user.name")+"/Documents/GitHub/PLC_GCS/TP1-Santinhos/pagina.html");
+         //FileWriter writer = new FileWriter("C:/Users/"+System.getProperty("user.name")+"/Documents/GitHub/PLC_GCS/TP1-Santinhos/pagina.html");
+         FileWriter writer = new FileWriter("D:/Documentos/GitHub/PLC_GCS/TP1-Santinhos/pagina.html");
          for(String str: html) {
              writer.write(str);
          }
@@ -299,8 +303,8 @@ ligacao
        
        //Indice do html
        if(pal1.startsWith("pag") && rel1.equals("iof") &&pal2.startsWith("Pagela")){
-                ind_html.add("<li><a href=\"#id\">" + pal1+ "</a></li>"); 
-                tit_html.add("<hr> \n <h3> <a name=\"id\"></a>"+ pal1+"</h3>"+"\n<h6> \n[<a href=\"#indice\">Voltar ao indice</a>] \n </h6>");
+                ind_html.add("<li><a href=\"#" + pal1 + "\">" + pal1+ "</a></li>"); 
+                tit_html.add("<hr> \n <h3> <a name=\"" + pal1 + "\"></a>"+ pal1+"</h3>"+"\n<h6> \n[<a href=\"#indice\">Voltar ao indice</a>] \n </h6>");
        }
        }        
     : txtpal{pal1 = $txtpal.texto;} '=' relacao {rel1 = $relacao.rel;} '=>' txtpal {pal2 = $txtpal.texto;}
@@ -324,9 +328,7 @@ txtpal returns[String texto, String atrib, String tipo]
                                                                          
                                                                          cont_html.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
                                                                          
-                                                                         if(pal1.startsWith("pag")){
-                                                                            System.out.println("entrei");
-                                                                            
+                                                                         if(pal1.startsWith("pag")){                                                                            
                                                                             if(map.containsKey(pal1)){
                                                                                 map.get(pal1).add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
                                                                             }else{
@@ -334,8 +336,7 @@ txtpal returns[String texto, String atrib, String tipo]
                                                                                 str.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
                                                                                 map.put(pal1,str);
                                                                              }
-                                                                         }else
-                                                                               System.out.println(pal1);
+                                                                         }
                                                                          }
                                     
                                     ( ',' +PAL {$atrib=$PAL.text;} '=' TXT{$tipo = $TXT.text;
@@ -348,9 +349,7 @@ txtpal returns[String texto, String atrib, String tipo]
                                                                            
                                                                            cont_html.add("<p><b>"+$atrib+":  </b>" +$tipo.replace("\"","")+"\n </p>");
                                                                            
-                                                                           if(pal1.startsWith("pag")){
-                                                                            System.out.println("entrei");
-                                                                            
+                                                                           if(pal1.startsWith("pag")){                                                                            
                                                                             if(map.containsKey(pal1)){
                                                                                 map.get(pal1).add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
                                                                             }else{
@@ -358,8 +357,7 @@ txtpal returns[String texto, String atrib, String tipo]
                                                                                 str.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
                                                                                 map.put(pal1,str);
                                                                              }
-                                                                           }else
-                                                                               System.out.println(pal1);
+                                                                           }
                                                                            })* ']')?
       
        
@@ -374,8 +372,6 @@ txtpal returns[String texto, String atrib, String tipo]
                                                                         cont_html.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
                                                                         
                                                                         if(pal1.startsWith("pag")){
-                                                                            System.out.println("entrei");
-                                                                            
                                                                             if(map.containsKey(pal1)){
                                                                                 map.get(pal1).add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
                                                                             }else{
@@ -383,8 +379,8 @@ txtpal returns[String texto, String atrib, String tipo]
                                                                                 str.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
                                                                                 map.put(pal1,str);
                                                                              }
-                                                                         }else
-                                                                               System.out.println($texto);}
+                                                                         }
+                                                                        }
                                     ( ',' +PAL {$atrib=$PAL.text;} '=' TXT{$tipo = $TXT.text;
                                                                            instAtrib_owl.add("<DataPropertyAssertion> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal1 
                                                                            + "\"/> \n <Literal datatypeIRI=\"&xsd;" +data.get($atrib) +  "\">"+ $tipo.replace("\"","") + "</Literal> \n</DataPropertyAssertion>");
@@ -396,8 +392,6 @@ txtpal returns[String texto, String atrib, String tipo]
                                                                            cont_html.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
                                                                            
                                                                            if(pal1.startsWith("pag")){
-                                                                            System.out.println("entrei");
-                                                                            
                                                                             if(map.containsKey(pal1)){
                                                                                 map.get(pal1).add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
                                                                             }else{
@@ -405,8 +399,7 @@ txtpal returns[String texto, String atrib, String tipo]
                                                                                 str.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
                                                                                 map.put($texto,str);
                                                                              }
-                                                                         }else
-                                                                               System.out.println($texto);})* ']')?
+                                                                         }})* ']')?
        ;
 
 PAL: [a-zA-Z] [-a-zA-Z_0-9]*;
