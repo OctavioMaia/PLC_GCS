@@ -242,8 +242,8 @@ triplos {
 		  
 		  
 		  %%Pagina20
+		  pag20_01 = iof => Pagela[tipo='lembranca', imagem='pag20_01.jpg', conteudo='Lembraça da Comunhão Solene de Maria José e Maria Luiza dos Santos Rangel Pamplona Feita na Igreja Paroquial de Matosinhos em 26-4-959'];
 		  pag20_02 = iof => Pagela[tipo='lembranca', imagem='pag20_02.jpg', conteudo='Lembraça da Comunhão Solene de Maria José e Maria Luiza dos Santos Rangel Pamplona Feita na Igreja Paroquial de Matosinhos em 26-4-959'];
-          pag20_01 = iof => Pagela[tipo='lembranca', imagem='pag20_01.jpg', conteudo='Lembraça da Comunhão Solene de Maria José e Maria Luiza dos Santos Rangel Pamplona Feita na Igreja Paroquial de Matosinhos em 26-4-959'];
 		  pag20_03 = iof => Pagela[tipo='lembranca', imagem='pag20_03.jpg', conteudo='Lembraça da Comunhão Solene de Maria José e Maria Luiza dos Santos Rangel Pamplona Feita na Igreja Paroquial de Matosinhos em 26-4-959'];
 		  pag20_04 = iof => Pagela[tipo='lembranca', imagem='pag20_04.jpg', conteudo='Lembraça da Comunhão Solene de Maria José e Maria Luiza dos Santos Rangel Pamplona Feita na Igreja Paroquial de Matosinhos em 26-4-959'];
 		  pag20_05 = iof => Pagela[tipo='lembranca', imagem='pag20_05.jpg', conteudo='Lembraça da Comunhão Solene de Maria José e Maria Luiza dos Santos Rangel Pamplona Feita na Igreja Paroquial de Matosinhos em 26-4-959'];

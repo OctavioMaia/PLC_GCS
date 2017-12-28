@@ -32,8 +32,11 @@ grammar ontoPagelas;
          List<String> cont_html = new ArrayList <>();
          
          Map<String,List<String>> map = new TreeMap<>();
-         List<String> conteudo = new ArrayList<>();
+         Map<String,List<String>> map_pes = new TreeMap<>();
+         Map<String,List<String>> map_ev = new TreeMap<>();
+         Map<String,List<String>> map_iof = new TreeMap<>();
          
+         List<String> conteudo = new ArrayList<>();
          
          String pal1, pal2, rel1;
          Map<String, String> data = new HashMap<>();
@@ -108,12 +111,57 @@ ontologia
               "<td width=\"70%\">");
       
        int i=0;
+       int flag=1;
+       int flag2=1;
+       int flag3=1;
        for (Map.Entry<String, List<String>> entry : map.entrySet()){
+           flag=1;
+           flag2=1;
+           flag3=1;
            String str = ind_html.get(i);
+           String id_pes = "pes"+str.substring(17,22);
+           String id_ev = "ev"+str.substring(17,22);
+           String id_iof = "pag"+str.substring(17,22);
            html.add("<hr> \n <h3> <a name=\"" + str.substring(14,22) + "\"></a>"+ str+"</h3>"+"\n<h6> \n[<a href=\"#indice\">Voltar ao indice</a>] \n </h6>");
 
            for(String s : map.get(str.substring(14,22))){
                html.add(s);
+               if(map_pes.get(id_pes)!=null){
+                    for(String s2 : map_pes.get(id_pes)){
+                        if(flag==1){
+                           html.add(s2);
+                        }
+                        flag=0;
+                    }
+                    flag=0;
+               }else{
+                  System.out.println("nao encontrei "+id_pes);
+               }
+               
+               //eventos
+               if(map_ev.get(id_ev)!=null){
+                    for(String s3 : map_ev.get(id_ev)){
+                        if(flag2==1){
+                           html.add(s3);
+                        }
+                    }
+                    flag2=0;
+               }else{
+                  System.out.println("nao encontrei "+id_ev);
+               }
+               
+               //iof
+               if(map_iof.get(id_iof)!=null){
+                    for(String s4 : map_iof.get(id_iof)){
+                        if(flag3==1){
+                           html.add(s4);
+                        }
+                    }
+                    flag3=0;
+               }else{
+                  System.out.println("nao encontrei "+str);
+               }
+               
            }
            i++;
        }
@@ -121,8 +169,8 @@ ontologia
        html.add("\n</html>");
        
        try{
-         //FileWriter writer = new FileWriter("C:/Users/"+System.getProperty("user.name")+"/Documents/GitHub/PLC_GCS/TP1-Santinhos/pagina.html");
-         FileWriter writer = new FileWriter("D:/Documentos/GitHub/PLC_GCS/TP1-Santinhos/pagina.html");
+         FileWriter writer = new FileWriter("C:/Users/"+System.getProperty("user.name")+"/Documents/GitHub/PLC_GCS/TP1-Santinhos/pagina.html");
+         //FileWriter writer = new FileWriter("D:/Documentos/GitHub/PLC_GCS/TP1-Santinhos/pagina.html");
          for(String str: html) {
              writer.write(str);
          }
@@ -291,7 +339,15 @@ ligacao
           relh_owl.add("<SubClassOf> \n <Class IRI=\"#" + pal1 + "\"/>" + "\n <Class IRI=\"#" + pal2 + "\"/>" + "\n</SubClassOf>");
        }
        if(rel1.equals("iof")){
+          String[] iof = {"Festa_Religiosa", "Batizado", "Primeira_Comunhao", "Comunhao_Solene", "Casamento", "Morte", "Aniversario", "Crisma"};
           inst_owl.add("<ClassAssertion> \n <Class IRI=\"#" + pal1 + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal2 + "\"/>" + "\n</ClassAssertion>");
+          for(String s: iof){
+              if(s.equals(pal2)){
+                 List<String> str = new ArrayList<>();
+                 str.add("<p><b>evento: </b>" + pal2 + "\n </p>");
+                 map_iof.put(pal1,str);
+              }
+          }
        }
        if(rel1.equals("owns")| rel1.equals("has") | rel1.equals("pof")){
           instTrip_owl.add("<ObjectPropertyAssertion> \n <ObjectProperty IRI=\"#" + rel1 + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal1 + "\"/>" + "\n <NamedIndividual IRI=\"#" 
@@ -327,8 +383,7 @@ txtpal returns[String texto, String atrib, String tipo]
                                                                          +data.get($atrib) +  "\"/> \n</DataPropertyRange>");
                                                                          
                                                                          cont_html.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
-                                                                         
-                                                                         if(pal1.startsWith("pag")){                                                                            
+                                                                         if($texto.startsWith("Pagela")){                                                                            
                                                                             if(map.containsKey(pal1)){
                                                                                 map.get(pal1).add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
                                                                             }else{
@@ -336,8 +391,27 @@ txtpal returns[String texto, String atrib, String tipo]
                                                                                 str.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
                                                                                 map.put(pal1,str);
                                                                              }
+                                                                         }else if($texto.startsWith("Pessoa")){
+                                                                                                               
+                                                                             if(map_pes.containsKey(pal1)){
+                                                                                map_pes.get(pal1).add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                            }else{
+                                                                                List<String> str = new ArrayList<>();
+                                                                                str.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                                map_pes.put(pal1,str);
+                                                                             }
+                                                                         }else if($texto.startsWith("Evento")){
+                                                                                                               
+                                                                             if(map_ev.containsKey(pal1)){
+                                                                                map_ev.get(pal1).add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                            }else{
+                                                                                List<String> str = new ArrayList<>();
+                                                                                str.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                                map_ev.put(pal1,str);
+                                                                             }
                                                                          }
                                                                          }
+                                                                         
                                     
                                     ( ',' +PAL {$atrib=$PAL.text;} '=' TXT{$tipo = $TXT.text;
                                                                            instAtrib_owl.add("<DataPropertyAssertion> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal1 + 
@@ -348,8 +422,7 @@ txtpal returns[String texto, String atrib, String tipo]
                                                                            +data.get($atrib) +  "\"/> \n</DataPropertyRange>");
                                                                            
                                                                            cont_html.add("<p><b>"+$atrib+":  </b>" +$tipo.replace("\"","")+"\n </p>");
-                                                                           
-                                                                           if(pal1.startsWith("pag")){                                                                            
+                                                                           if($texto.startsWith("Pagela")){                                                                            
                                                                             if(map.containsKey(pal1)){
                                                                                 map.get(pal1).add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
                                                                             }else{
@@ -357,7 +430,27 @@ txtpal returns[String texto, String atrib, String tipo]
                                                                                 str.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
                                                                                 map.put(pal1,str);
                                                                              }
-                                                                           }
+                                                                           }else if($texto.startsWith("Pessoa")){
+                                                                                                           
+                                                                             if(map_pes.containsKey(pal1)){
+                                                                                map_pes.get(pal1).add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                            }else{
+                                                                                List<String> str = new ArrayList<>();
+                                                                                str.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                                map_pes.put(pal1,str);
+                                                                             }
+                                                                         }else if($texto.startsWith("Evento")){
+                                                                                                          
+                                                                             if(map_ev.containsKey(pal1)){
+                                                                                map_ev.get(pal1).add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                            }else{
+                                                                                List<String> str = new ArrayList<>();
+                                                                                str.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                                map_ev.put(pal1,str);
+                                                                             }
+                                                                         }
+                                                                           
+                                                                         
                                                                            })* ']')?
       
        
@@ -370,8 +463,7 @@ txtpal returns[String texto, String atrib, String tipo]
                                                                         +data.get($atrib) +  "\"/> \n</DataPropertyRange>");
                                                                         
                                                                         cont_html.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
-                                                                        
-                                                                        if(pal1.startsWith("pag")){
+                                                                        if($texto.startsWith("Pagela")){
                                                                             if(map.containsKey(pal1)){
                                                                                 map.get(pal1).add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
                                                                             }else{
@@ -379,7 +471,26 @@ txtpal returns[String texto, String atrib, String tipo]
                                                                                 str.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
                                                                                 map.put(pal1,str);
                                                                              }
+                                                                         }else if($texto.startsWith("Pessoa")){
+                                                                                                         
+                                                                             if(map_pes.containsKey(pal1)){
+                                                                                map_pes.get(pal1).add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                            }else{
+                                                                                List<String> str = new ArrayList<>();
+                                                                                str.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                                map_pes.put(pal1,str);
+                                                                             }
+                                                                         }else if($texto.startsWith("Evento")){
+                                                                                                      
+                                                                             if(map_ev.containsKey(pal1)){
+                                                                                map_ev.get(pal1).add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                            }else{
+                                                                                List<String> str = new ArrayList<>();
+                                                                                str.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                                map_ev.put(pal1,str);
+                                                                             }
                                                                          }
+                                                                         
                                                                         }
                                     ( ',' +PAL {$atrib=$PAL.text;} '=' TXT{$tipo = $TXT.text;
                                                                            instAtrib_owl.add("<DataPropertyAssertion> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal1 
@@ -390,16 +501,35 @@ txtpal returns[String texto, String atrib, String tipo]
                                                                            +data.get($atrib) +  "\"/> \n</DataPropertyRange>");
                                                                            
                                                                            cont_html.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
-                                                                           
-                                                                           if(pal1.startsWith("pag")){
+                                                                           if($texto.startsWith("Pagela")){
                                                                             if(map.containsKey(pal1)){
                                                                                 map.get(pal1).add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
                                                                             }else{
                                                                                 List<String> str = new ArrayList<>();
                                                                                 str.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
-                                                                                map.put($texto,str);
+                                                                                map.put(pal1,str);
                                                                              }
-                                                                         }})* ']')?
+                                                                            }else if($texto.startsWith("Pessoa")){
+                                                                                                        
+                                                                             if(map_pes.containsKey(pal1)){
+                                                                                map_pes.get(pal1).add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                            }else{
+                                                                                List<String> str = new ArrayList<>();
+                                                                                str.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                                map_pes.put(pal1,str);
+                                                                             }
+                                                                         }else if($texto.startsWith("Evento")){
+                                                                                                            
+                                                                             if(map_ev.containsKey(pal1)){
+                                                                                map_ev.get(pal1).add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                            }else{
+                                                                                List<String> str = new ArrayList<>();
+                                                                                str.add("<p><b>"+$atrib+":  </b>" + $tipo.replace("\"","")+"\n </p>");
+                                                                                map_ev.put(pal1,str);
+                                                                             }
+                                                                         }
+                                                                            
+                                                                         })* ']')?
        ;
 
 PAL: [a-zA-Z] [-a-zA-Z_0-9]*;
