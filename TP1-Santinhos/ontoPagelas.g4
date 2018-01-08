@@ -114,6 +114,7 @@ ontologia
        int flag=1;
        int flag2=1;
        int flag3=1;
+       int flag_img=1;
        for (Map.Entry<String, List<String>> entry : map.entrySet()){
            flag=1;
            flag2=1;
@@ -129,7 +130,7 @@ ontologia
                if(map_pes.get(id_pes)!=null){
                     for(String s2 : map_pes.get(id_pes)){
                         if(flag==1){
-                           html.add(s2);
+                           html.add(s2);  
                         }
                         flag=0;
                     }
@@ -138,11 +139,13 @@ ontologia
                   System.out.println("nao encontrei "+id_pes);
                }
                
+               
                //eventos
                if(map_ev.get(id_ev)!=null){
                     for(String s3 : map_ev.get(id_ev)){
                         if(flag2==1){
                            html.add(s3);
+             
                         }
                     }
                     flag2=0;
@@ -155,15 +158,21 @@ ontologia
                     for(String s4 : map_iof.get(id_iof)){
                         if(flag3==1){
                            html.add(s4);
+                           
                         }
                     }
                     flag3=0;
                }else{
                   System.out.println("nao encontrei "+str);
                }
-               
            }
            i++;
+           
+           if(flag_img==1){
+              html.add("<img src=" + '"' + "/imagens/" + id_iof + ".jpg" + '"' + "/>");
+              flag_img=0;
+           }
+           
        }
       
        html.add("\n</html>");
