@@ -96,13 +96,15 @@ ontologia
        //HTML
        html.add("<html>\n" +
                     "<head>\n"+
-                        "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n"+
-                            "<meta charset=\"UTF-8\">\n"+
+                    "<div class=\"w3-container w3-dark-grey\"> <h1>Pagelas</h1> </div>\n" +
+                        "<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n"+
+                            "<link rel=\"stylesheet\" href=\"https://www.w3schools.com/w3css/4/w3.css\">\n" +
+                            "<head/>\n" +
                                 "<body>\n"+
-                                     "<table>\n"+
-                                        "<tr>\n"+
+                                     "<table class=\"w3-table w3-striped w3-light-grey\">" +
+                                        "<tr class>\n"+
                                             "<td width=\"30%\" valign=\"top\">\n"+
-                                                "<h3><a name=\"indice\"></a>Indíce de Pagelas\n"+
+                                                "<h3><a name=\"indice\"></a>Indice de Pagelas\n"+
                                                 "</h3>\n"+
                                                 "<ol>\n ");
        html.addAll(ind_html);
@@ -119,6 +121,7 @@ ontologia
            flag=1;
            flag2=1;
            flag3=1;
+           flag_img=1;
            String str = ind_html.get(i);
            String id_pes = "pes"+str.substring(17,22);
            String id_ev = "ev"+str.substring(17,22);
@@ -169,10 +172,10 @@ ontologia
            i++;
            
            if(flag_img==1){
-              html.add("<img src=" + '"' + "/imagens/" + id_iof + ".jpg" + '"' + "/>");
+              String pasta = "C:/Users/"+System.getProperty("user.name")+"/Documents/GitHub/PLC_GCS/TP1-Santinhos/Imagens/"+id_iof;
+              html.add("<img src=" + '"' + pasta + ".jpg" + '"' + "/>");
               flag_img=0;
            }
-           
        }
       
        html.add("\n</html>");
