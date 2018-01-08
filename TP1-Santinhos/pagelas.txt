@@ -4,26 +4,26 @@ conceitos { Pagela[tipo:string, imagem:byte, conteudo:string], Pessoa[nome:strin
             Santo[nome:string, historia:string], Evento[data:dateTime, local:string],
             Festa_Religiosa, Batizado, Primeira_Comunhao, Comunhao_Solene, Casamento, Morte, Aniversario, Crisma
           }
-individuos { pes16_01, pes16_02_01, pes16_02_02, pes16_03_01, pes16_03_02, pes16_04, pes16_05, pes16_06_01, pes16_06_02, pes16_07, pes16_08, 
+individuos { pes16_01, pes16_02, pes16_02_02, pes16_03, pes16_03_02, pes16_04, pes16_05, pes16_06, pes16_06_02, pes16_07, pes16_08, 
 			 pag16_01, pag16_02, pag16_03, pag16_04, pag16_05, pag16_06, pag16_07, pag16_08,
-			 pes17, pes17_04, pes17_05, pes17_06, pes17_07,
+			 pes17_01, pes17_04, pes17_05, pes17_06, pes17_07,
 			 pag17_01, pag17_02, pag17_03, pag17_04, pag17_05, pag17_06, pag17_07, pag17_08,
-			 pes18_01, pes18_02_01, pes18_02_02, pes18_03, pes18_06, pes18_07, pes18_08, 
+			 pes18_01, pes18_02, pes18_02_02, pes18_03, pes18_06, pes18_07, pes18_08, 
 			 pag18_01, pag18_02, pag18_03, pag18_04, pag18_05, pag18_06, pag18_07, pag18_08, 
 			 pes19_01, pes19_02, pes19_03, pes19_04, pes19_05, pes19_06,
 			 pag19_01, pag19_02, pag19_03, pag19_04, pag19_05, pag19_06,
 			 pes20_01, pes20_02,
 			 pag20_01, pag20_02, pag20_03, pag20_04, pag20_05, pag20_06, pag20_07, pag20_08, 
-			 pes21_01_01, pes21_01_02, pes21_02, pes21_05,
+			 pes21_01, pes21_01_02, pes21_02, pes21_05,
 			 santo21_05,
 			 pag21_01, pag21_02, pag21_03, pag21_04, pag21_05,
 			 pag22_01, pag22_02, pag22_03, pag22_04, pag22_05, pag22_06, pag22_07, pag22_08, 
-			 pes22_01_01, pes22_01_02, pes22_02_01, pes22_03_01, pes22_04_01, pes22_04_02, pes22_05_01, pes22_05_02,
-			 pes22_06_01, pes22_06_02, pes22_07_01, pes22_08_01, pes22_08_02,	 
+			 pes22_01, pes22_01_02, pes22_02, pes22_03, pes22_04, pes22_04_02, pes22_05, pes22_05_02,
+			 pes22_06, pes22_06_02, pes22_07, pes22_08, pes22_08_02,	 
 			 pes23_01, pes23_02, pes23_03, pes23_04,
 			 pag23_01, pag23_02, pag23_03, pag23_04,
 			 ev16_01, ev16_02, ev16_03, ev16_04, ev16_05, ev16_06, ev16_07, ev16_08,
-			 ev17,
+			 ev17_01,
 			 ev19_01, ev19_02, ev19_03, ev19_04, ev19_05, ev19_06,
 			 ev20,
 			 ev21_01, ev21_02, ev21_03, ev21_04, ev21_05,
@@ -40,19 +40,19 @@ triplos {
 		  pag16_01 = associada => ev16_01;
 		  pag16_01 = iof => Comunhao_Solene;
 		  
-		  pes16_02_01 = iof => Pessoa[nome='Maria Angélica Andresen de Castro Henriques'];
+		  pes16_02= iof => Pessoa[nome='Maria Angélica Andresen de Castro Henriques'];
 		  pes16_02_02 = iof => Pessoa[nome='Elsa Andresen de Castro Henriques'];
 		  pag16_02 = iof => Pagela[tipo='lembranca', imagem='pag16_02.jpg', conteudo='lembranca da Primeira Comunhão de Maria Angélica Andresen de Castro Henriques e Elsa Andresen de Castro Henriques Celebrada na Igreja de Paranhos em 19 de Junho de 1932'];
-		  pes16_02_01 = oferece => pag16_02;
+		  pes16_02= oferece => pag16_02;
 		  pes16_02_02 = oferece => pag16_02;
 		  ev16_02 = iof => Evento[data='19-06-1932', local='Igreja de Paranhos'];
 		  pag16_02 = associada => ev16_02;
 		  pag16_02 = iof => Primeira_Comunhao;
 		  
-		  pes16_03_01 = iof => Pessoa[nome='Maria Angélica Andresen de Castro Henriques'];
+		  pes16_03= iof => Pessoa[nome='Maria Angélica Andresen de Castro Henriques'];
 		  pes16_03_02 = iof => Pessoa[nome='Elsa Andresen de Castro Henriques'];
 		  pag16_03 = iof => Pagela[tipo='lembranca', imagem='pag16_03.jpg', conteudo='lembranca da Primeira Comunhão de Maria Angélica Andresen de Castro Henriques e Elsa Andresen de Castro Henriques Celebrada na Igreja de Paranhos em 19 de Junho de 1932'];
-		  pes16_03_01 = oferece => pag16_03;
+		  pes16_03= oferece => pag16_03;
 		  pes16_03_02 = oferece => pag16_03;
 		  ev16_03 = iof => Evento[data='19-06-1932', local='Igreja de Paranhos'];
 		  pag16_03 = associada => ev16_03;
@@ -73,10 +73,10 @@ triplos {
 		  pag16_05 = iof => Crisma;
 		  pag16_05 = iof => Primeira_Comunhao;
 		  
-		  pes16_06_01 = iof => Pessoa[nome='Maria Angélica Andresen de Castro Henriques'];
+		  pes16_06 = iof => Pessoa[nome='Maria Angélica Andresen de Castro Henriques'];
 		  pes16_06_02 = iof => Pessoa[nome='Elsa Andresen de Castro Henriques'];
 		  pag16_06 = iof => Pagela[tipo='lembranca', imagem='pag16_06.jpg', conteudo='lembranca da Primeira Comunhão de Maria Angélica Andresen de Castro Henriques e Elsa Andresen de Castro Henriques Celebrada na Igreja de Paranhos em 19 de Junho de 1932'];
-		  pes16_06_01 = oferece => pag16_06;
+		  pes16_06= oferece => pag16_06;
 		  pes16_06_02 = oferece => pag16_06;
 		  ev16_06 = iof => Evento[data='19-06-1932', local='Igreja de Paranhos'];
 		  pag16_06 = associada => ev16_06;
@@ -107,15 +107,15 @@ triplos {
 		  pag17_07 = iof => Pagela[tipo='oferta', imagem='pag17_07.jpg', conteudo='Um beijo no dia da sua 1ªComunhão do seu irmão João Manuel'];
 		  pag17_08 = iof => Pagela[tipo='oferta', imagem='pag17_08.jpg', conteudo='à Leninha, como lembrança da sua 1ª Comunhão e para que Deus a abençoe para toda a vida! Maria Helena'];
 		  
-		  pes17 = iof => Pessoa[nome='Maria Helena'];
-		  pes17 = recebe => pag17_01;
-		  pes17 = recebe => pag17_02;
-		  pes17 = recebe => pag17_03;
-		  pes17 = recebe => pag17_04;
-		  pes17 = recebe => pag17_05;
-		  pes17 = recebe => pag17_06;
-		  pes17 = recebe => pag17_07;
-		  pes17 = recebe => pag17_08;
+		  pes17_01 = iof => Pessoa[nome='Maria Helena'];
+		  pes17_01 = recebe => pag17_01;
+		  pes17_01 = recebe => pag17_02;
+		  pes17_01 = recebe => pag17_03;
+		  pes17_01 = recebe => pag17_04;
+		  pes17_01 = recebe => pag17_05;
+		  pes17_01 = recebe => pag17_06;
+		  pes17_01 = recebe => pag17_07;
+		  pes17_01 = recebe => pag17_08;
 		  
 		  pes17_04 = iof => Pessoa[nome='Alexandre'];
 		  pes17_05 = iof => Pessoa[nome='António Sabino'];
@@ -124,15 +124,15 @@ triplos {
 		  pes17_05 = oferece => pag17_05;
 		  pes17_07 = oferece => pag17_07;
 		  
-		  ev17 = iof => Evento[data='02-07-1939', local='Igreja de Nevogilde'];
-		  pag17_01 = associada => ev17;
-		  pag17_02 = associada => ev17;
-		  pag17_03 = associada => ev17;
-		  pag17_04 = associada => ev17;
-		  pag17_05 = associada => ev17;
-		  pag17_06 = associada => ev17;
-		  pag17_07 = associada => ev17;
-		  pag17_08 = associada => ev17;
+		  ev17_01 = iof => Evento[data='02-07-1939', local='Igreja de Nevogilde'];
+		  pag17_01 = associada => ev17_01;
+		  pag17_02 = associada => ev17_01;
+		  pag17_03 = associada => ev17_01;
+		  pag17_04 = associada => ev17_01;
+		  pag17_05 = associada => ev17_01;
+		  pag17_06 = associada => ev17_01;
+		  pag17_07 = associada => ev17_01;
+		  pag17_08 = associada => ev17_01;
 		  
 		  pag17_01 = iof => Primeira_Comunhao;
 		  pag17_02 = iof => Primeira_Comunhao;
@@ -154,38 +154,38 @@ triplos {
 		  pag18_07 = iof => Pagela[tipo='oferta', imagem='pag18_07.jpg', conteudo='Oferece com muitos parabéns pela tua comunhão a tua muito amigo que nunca te esqueçe Maria Alice Salvé dia de 2-7-939'];
 		  pag18_08 = iof => Pagela[tipo='oferta', imagem='pag18_08.jpg', conteudo='2-7-939 Que o Bom Pastor a guie sempre durante a vida: é o que pede neste grande dia, a muito amiga. Maria Filomena'];
 		  
-		  pes17 = recebe => pag18_01;
-		  pes17 = recebe => pag18_02;
-		  pes17 = recebe => pag18_03;
-		  pes17 = recebe => pag18_04;
-		  pes17 = recebe => pag18_05;
-		  pes17 = recebe => pag18_06;
-		  pes17 = recebe => pag18_07;
-		  pes17 = recebe => pag18_08;
+		  pes17_01 = recebe => pag18_01;
+		  pes17_01 = recebe => pag18_02;
+		  pes17_01 = recebe => pag18_03;
+		  pes17_01 = recebe => pag18_04;
+		  pes17_01 = recebe => pag18_05;
+		  pes17_01 = recebe => pag18_06;
+		  pes17_01 = recebe => pag18_07;
+		  pes17_01 = recebe => pag18_08;
 		  
 		  pes18_01 = iof => Pessoa[nome='Maria Virgínia'];
-		  pes18_02_01 = iof => Pessoa[nome='Maria Fernanda'];
+		  pes18_02 = iof => Pessoa[nome='Maria Fernanda'];
 		  pes18_02_02 = iof => Pessoa[nome='Fernando'];
 		  pes18_03 = iof => Pessoa[nome='Celice'];
 		  pes18_06 = iof => Pessoa[nome='Maria Alice'];		  
 		  pes18_07 = iof => Pessoa[nome='Maria Alice'];
 		  pes18_08 = iof => Pessoa[nome='Maria Filomena'];
 		  pes18_01 = oferece => pag18_01;
-		  pes18_02_01 = oferece => pag18_02;
+		  pes18_02 = oferece => pag18_02;
 		  pes18_02_02 = oferece => pag18_02;
 		  pes18_03 = oferece => pag18_03;
 		  pes18_06 = oferece => pag18_06;
 		  pes18_07 = oferece => pag18_07;
 		  pes18_08 = oferece => pag18_08;
 		  
-		  pag18_01 = associada => ev17;
-		  pag18_02 = associada => ev17;
-		  pag18_03 = associada => ev17;
-		  pag18_04 = associada => ev17;
-		  pag18_05 = associada => ev17;
-		  pag18_06 = associada => ev17;
-		  pag18_07 = associada => ev17;
-		  pag18_08 = associada => ev17;
+		  pag18_01 = associada => ev17_01;
+		  pag18_02 = associada => ev17_01;
+		  pag18_03 = associada => ev17_01;
+		  pag18_04 = associada => ev17_01;
+		  pag18_05 = associada => ev17_01;
+		  pag18_06 = associada => ev17_01;
+		  pag18_07 = associada => ev17_01;
+		  pag18_08 = associada => ev17_01;
 		  
 		  pag18_01 = iof => Primeira_Comunhao;
 		  pag18_02 = iof => Primeira_Comunhao;
@@ -296,9 +296,9 @@ triplos {
 		  
 		  %%Pagina21
 		  pag21_01 = iof => Pagela[tipo='oferta', imagem='pag21_01.jpg', conteudo='29-x-940 Ofereço êste santinho à Helena como prova de muita amizade da muito amiga Maria Fernanda Gomes'];
-		  pes21_01_01 = iof => Pessoa[nome='Helena'];
+		  pes21_01 = iof => Pessoa[nome='Helena'];
 		  pes21_01_02 = iof => Pessoa[nome='Maria Fernanda Gomes'];
-          pes21_01_01 = recebe => pag21_01;
+          pes21_01 = recebe => pag21_01;
 		  pes21_01_02 = oferece => pag21_01;
           ev21_01 = iof => Evento[data='29-10-1940'];
           pag21_01 = associada => ev21_01;
@@ -329,62 +329,62 @@ triplos {
 		  
 		   %%Pagina22
 		  pag22_01 = iof => Pagela[tipo='comemoracao', imagem='pag22_01.jpg', conteudo='Léna. Ofereço-te este Santinho por ser dia do teu aniversário tua amiga Pina'];
-		  pes22_01_01 = iof => Pessoa[nome='Lena'];
+		  pes22_01 = iof => Pessoa[nome='Lena'];
 		  pes22_01_02 = iof => Pessoa[nome='Pina'];
-		  pes22_01_01 = recebe => pag22_01;
+		  pes22_01 = recebe => pag22_01;
 		  pes22_01_02 = oferece => pag22_01;
 		  ev22_01 = iof => Evento;
           pag22_01 = associada => ev22_01;
 		  pag22_01 = iof => Aniversario;
 		  
 		  pag22_02 = iof => Pagela[tipo='lembranca', imagem='pag22_02.jpg', conteudo='Ofereço à minha amiga ... . Como lembrança da Comonhão Solena. Maria 11-4-1938' ];
-		  pes22_02_01 = iof => Pessoa[nome='Maria'];
-		  pes22_02_01 = oferece => pag22_02;
+		  pes22_02= iof => Pessoa[nome='Maria'];
+		  pes22_02 = oferece => pag22_02;
 		  ev22_02 = iof => Evento[data='11-04-1938'];
           pag22_02 = associada => ev22_02;
 		  pag22_02 = iof => Comunhao_Solene;
 		  
 		  pag22_03 = iof => Pagela[tipo='oferta', imagem='pag22_03.jpg', conteudo='off: este santinho para que nunca te esqueças da amiguinha muito amiga Lina Porto-16-6-943' ];
-		  pes22_03_01 = iof => Pessoa[nome='Lina'];
-		  pes22_03_01 = oferece => pag22_02;
+		  pes22_03 = iof => Pessoa[nome='Lina'];
+		  pes22_03 = oferece => pag22_02;
 		  ev22_03 = iof => Evento[data='16-06-1943', local='Porto']; %% Não tem evento especifico. O que fazer?
 		  pag22_03 = associada => ev22_03;
 		  
 		  pag22_04 = iof => Pagela[tipo='oferta', imagem='pag22_04.jpg', conteudo='21-2-941 Ofereço este santinho como prova de muita amizade à muita muito amiga Helena Rangel da muito amiga, Maria Cândida Vila...' ];
-		  pes22_04_01 = iof => Pessoa[nome='Helena Rangel'];
+		  pes22_04 = iof => Pessoa[nome='Helena Rangel'];
 		  pes22_04_02 = iof => Pessoa[nome='Maria Cândida Vila'];
-		  pes22_04_01 = recebe => pag22_04;
+		  pes22_04 = recebe => pag22_04;
 		  pes22_04_02 = oferece => pag22_04;
 		  ev22_04 = iof => Evento[data='21-02-1941'];  %% Não tem evento especifico. O que fazer?
 		  pag22_04 = associada => ev22_04;
 		  
 		  pag22_05 = iof => Pagela[tipo='comemoracao', imagem='pag22_05.jpg', conteudo='Ofereço à Lena Rangel como recordação do natal. Da tua companheira maria manuela ... 13-12-939'];
-		  pes22_05_01 = iof => Pessoa[nome='Lena Rangel'];
+		  pes22_05 = iof => Pessoa[nome='Lena Rangel'];
 		  pes22_05_02 = iof => Pessoa[nome='Maria Manuela'];
-		  pes22_05_01 = recebe => pag22_05;
+		  pes22_05 = recebe => pag22_05;
 		  pes22_05_02 = oferece => pag22_05;
 		  ev22_05 = iof => Evento[data='13-12-1939'];
           pag22_05 = associada => ev22_05;
 		  pag22_05 = iof => Festa_Religiosa;
 		  
 		  pag22_06 = iof => Pagela[tipo='comemoracao', imagem='pag22_06.jpg', conteudo='6-3-939 Envio-te muitos parabens e felicidades no dia de hoje e que se repita por muitos anos na companhia da tua familia. Desta tua aminga. Né 6/3/1939' ];
-		  pes22_06_01 = iof => Pessoa[nome='Maria Manuela'];
+		  pes22_06 = iof => Pessoa[nome='Maria Manuela'];
 		  pes22_06_02 = oferece => pag22_06;
 		  ev22_06 = iof => Evento[data='06-03-1939'];
           pag22_06 = associada => ev22_06;
 		  pag22_06 = iof => Aniversario;
 		  
 		  pag22_07 = iof => Pagela[tipo='oferta', imagem='pag22_07.jpg', conteudo='Que o menino Jesus te cobra de benção e que viva sempre no teu coração Maria Helana Figueiredo 2-7-1989' ];
-		  pes22_07_01 = iof => Pessoa[nome='Maria Helana Figueiredo'];
-		  pes22_07_01 = oferece => pag22_07;
+		  pes22_07 = iof => Pessoa[nome='Maria Helana Figueiredo'];
+		  pes22_07= oferece => pag22_07;
 		  ev22_07 = iof => Evento[data='06-03-1939'];
           pag22_07 = associada => ev22_07;
 		  pag22_07 = iof => Aniversario;
 		  
 		  pag22_08 = iof => Pagela[tipo='oferta', imagem='pag22_08.jpg', conteudo='Para a minha querida Lina ofereço esta pequena lembrança a amiga e companheira de sempre Jicas 2-12-1943' ];
-		  pes22_08_01 = iof => Pessoa[nome='Lina'];
+		  pes22_08 = iof => Pessoa[nome='Lina'];
 		  pes22_08_02 = iof => Pessoa[nome='Jicas'];
-		  pes22_08_01 = recebe => pag22_08;
+		  pes22_08 = recebe => pag22_08;
 		  pes22_08_02 = oferece => pag22_08;
 		  ev22_08 = iof => Evento[data='02-12-1943'];
 		  pag22_08 = associada => ev22_08;
