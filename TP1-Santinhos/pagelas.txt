@@ -25,7 +25,7 @@ individuos { pes16_01, pes16_02, pes16_02_02, pes16_03, pes16_03_02, pes16_04, p
 			 ev16_01, ev16_02, ev16_03, ev16_04, ev16_05, ev16_06, ev16_07, ev16_08,
 			 ev17_01,
 			 ev19_01, ev19_02, ev19_03, ev19_04, ev19_05, ev19_06,
-			 ev20,
+			 ev20_01,
 			 ev21_01, ev21_02, ev21_03, ev21_04, ev21_05,
 			 ev22_01, ev22_02, ev22_03, ev22_04, ev22_05, ev22_06, ev22_07, ev22_08,
 			 ev23_01, ev23_02, ev23_03, ev23_04}
@@ -273,16 +273,16 @@ triplos {
 		  pes20_02 = oferece => pag20_07;
 		  pes20_02 = oferece => pag20_08;
 		  
-          ev20 = iof => Evento[data='26-04-1959', local='Igreja Paroquial de Matosinhos'];
+          ev20_01 = iof => Evento[data='26-04-1959', local='Igreja Paroquial de Matosinhos'];
 		  
-          pag20_01 = associada => ev20;
-		  pag20_02 = associada => ev20;
-		  pag20_03 = associada => ev20;
-		  pag20_04 = associada => ev20;
-		  pag20_05 = associada => ev20;
-		  pag20_06 = associada => ev20;
-		  pag20_07 = associada => ev20;
-		  pag20_08 = associada => ev20;
+          pag20_01 = associada => ev20_01;
+		  pag20_02 = associada => ev20_01;
+		  pag20_03 = associada => ev20_01;
+		  pag20_04 = associada => ev20_01;
+		  pag20_05 = associada => ev20_01;
+		  pag20_06 = associada => ev20_01;
+		  pag20_07 = associada => ev20_01;
+		  pag20_08 = associada => ev20_01;
 		  
 		  pag20_01 = iof => Comunhao_Solene;
 		  pag20_02 = iof => Comunhao_Solene;

@@ -1,0 +1,25 @@
+Ontologia Automoveis
+conceitos  { componente[material:string], automovel, veiculo, meio_de_transporte, membro, pessoa, ser_vivo }
+individuos { 'fiat 00-TU-99', Pedro, roda, braco, perna, pe, porta, assento, farol, prh }
+relacoes   { has, owns }
+triplos    {
+  %% descricao relativa ao subdominio meios-de-transporte
+           'fiat 00-TU-99' =iof=> automovel;
+           automovel =is-a=> veiculo;
+           veiculo =is-a=> meio_de_transporte;
+           roda =iof=> componente[material='borracha',preco='12'];  %% 2 atributos qd esperado 1; o atributo preco nao existe
+           porta =iof=> componente[preco='120'];    %% o atributo preco nao existe (trocado com material)
+           assento =iof=> componente[material='pele'];
+           farol =iof=> componente;
+           automovel =has=> componente;
+  %% descricao relativa aos seres vivos
+           pessoa =owns=> automovel;
+           pessoa =is-a=> ser_vivo;
+           prh =iof=> pessoa[nome='Pedro'];    %% 1 atributo qd esperado 0; o atributo nome nao existe
+           Pedro =iof=> pessoa;
+           Pedro =owns=> 'fiat 00-TU-99';
+           pe =pof=> pessoa;    %% instancia -> conceito
+           braco =iof=> membro; perna =iof=> membro; pe =iof=> membro;
+           membro =pof=> Pedro;    %% conceito -> instancia (Pedro nao e conceito)
+           Pedro =parte=> ser_vivo %% instancia -> conceito (ser_vivo nao e instancia)
+  }.

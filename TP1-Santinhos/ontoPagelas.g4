@@ -11,6 +11,8 @@ grammar ontoPagelas;
          List<String> con = new ArrayList <>();
          List<String> ind = new ArrayList <>();
          List<String> rel = new ArrayList <>();
+         List<String> atribs = new ArrayList <>();
+         Map<String,List<String>> conAtribs = new TreeMap<>();
          
          List<String> con_owl = new ArrayList <>();
          List<String> ind_owl = new ArrayList <>();
@@ -45,7 +47,7 @@ grammar ontoPagelas;
 ontologia
 @after{   
        //OWL
-       owl.add("<?xml version=\"1.0\"?>\n" +
+       /*owl.add("<?xml version=\"1.0\"?>\n" +
                "<!DOCTYPE Ontology[\n" +
                "\t<!ENTITY xsd \"http://www.w3.org/2001/XMLSchema#\">\n" +
                "\t<!ENTITY xml \"http://www.w3.org/XML/1998/namespace\">\n" +
@@ -66,8 +68,8 @@ ontologia
        owl.add("</Ontology>");
       
        try{
-         //FileWriter writer = new FileWriter("C:/Users/"+System.getProperty("user.name")+"/Documents/GitHub/PLC_GCS/TP1-Santinhos/output_OWL.owl");
-         FileWriter writer = new FileWriter("D:/Documentos/GitHub/PLC_GCS/TP1-Santinhos/output_OWL.owl");
+         FileWriter writer = new FileWriter("C:/Users/"+System.getProperty("user.name")+"/Documents/GitHub/PLC_GCS/TP1-Santinhos/output_OWL.owl");
+         //FileWriter writer = new FileWriter("D:/Documentos/GitHub/PLC_GCS/TP1-Santinhos/output_OWL.owl");
          for(String str: owl) {
              writer.write(str);
          }
@@ -80,8 +82,8 @@ ontologia
        
        //DOT
        try{
-         //FileWriter writer = new FileWriter("C:/Users/"+System.getProperty("user.name")+"/Documents/GitHub/PLC_GCS/TP1-Santinhos/output_DOT.dot");
-         FileWriter writer = new FileWriter("D:/Documentos/GitHub/PLC_GCS/TP1-Santinhos/output_DOT.dot");
+         FileWriter writer = new FileWriter("C:/Users/"+System.getProperty("user.name")+"/Documents/GitHub/PLC_GCS/TP1-Santinhos/output_DOT.dot");
+         //FileWriter writer = new FileWriter("D:/Documentos/GitHub/PLC_GCS/TP1-Santinhos/output_DOT.dot");
          for(String str: dot) {
              writer.write(str);
          }
@@ -138,7 +140,7 @@ ontologia
                         flag=0;
                     }
                     flag=0;
-               }else{
+               }/*else{
                   System.out.println("nao encontrei "+id_pes);
                }
                
@@ -152,7 +154,7 @@ ontologia
                         }
                     }
                     flag2=0;
-               }else{
+               }/*else{
                   System.out.println("nao encontrei "+id_ev);
                }
                
@@ -165,7 +167,7 @@ ontologia
                         }
                     }
                     flag3=0;
-               }else{
+               }/*else{
                   System.out.println("nao encontrei "+str);
                }
            }
@@ -193,19 +195,22 @@ ontologia
          System.out.println("Erro HTML");
        }
        
-      }
+      */
+       System.out.println(atribs);
+       System.out.println(conAtribs);}
     
           : 'Ontologia ' PAL {dot.add("digraph "+$PAL.text+ " {");} conceitos individuos? relacoes triplos '.'{dot.add("}"); }
           ;
 
-conceitos returns [String atrib] 
+conceitos returns [String atrib, String conceito] 
             : 'conceitos' '{'PAL{if(!con.contains($PAL.text)){
                                     con.add($PAL.text);
                                     con_owl.add("<Declaration> \n <Class IRI=\"#" + $PAL.text+ "\"/>" + "\n</Declaration>");
                                  }else 
                                     System.out.println("Foi inserido um conceito previamente adicionado: "+$PAL.text);
+                                 
                                  } 
-            ('[' atribs ']')?
+            ('[' atribs[$PAL.text] ']')?
             (',' PAL{if(!con.contains($PAL.text)){
                         con.add($PAL.text);
                         con_owl.add("<Declaration> \n <Class IRI=\"#" + $PAL.text+ "\"/>");
@@ -214,14 +219,28 @@ conceitos returns [String atrib]
                      else 
                         System.out.println("Foi inserido um conceito previamente adicionado: "+$PAL.text);
                      }
-            ('[' atribs ']' )?)*'}'
+            ('[' atribs[$PAL.text] ']' )?)*'}'
           ;
 
 
-atribs returns [String atrib, String tipo] : 
-            PAL {$atrib=$PAL.text;} ':' PAL {$tipo=$PAL.text; data.put($atrib, $tipo); mat_owl.add("<Declaration> \n <DataProperty IRI=\"#"+$atrib+"\"/>" + "\n</Declaration>");} 
-            ((',')PAL {$atrib=$PAL.text;} ':' PAL {$tipo=$PAL.text ; data.put($atrib, $tipo); mat_owl.add("<Declaration> \n <DataProperty IRI=\"#"+$atrib+"\"/>" + "\n</Declaration>");})* 
-                              ;
+atribs [String conceito] returns [String atrib, String tipo]
+     : 
+            PAL {$atrib=$PAL.text;
+                 if(!atribs.contains($PAL.text)){
+                         atribs.add($PAL.text);}
+                 List<String> str = new ArrayList<>();
+                  str.add($PAL.text);
+                  } 
+            ':' PAL {$tipo=$PAL.text; data.put($atrib, $tipo); mat_owl.add("<Declaration> \n <DataProperty IRI=\"#"+$atrib+"\"/>" + "\n</Declaration>");} 
+            ((',')PAL {$atrib=$PAL.text;
+                       if(!atribs.contains($PAL.text)){
+                         atribs.add($PAL.text);}
+                       str.add($PAL.text);
+                      }
+             ':' PAL {$tipo=$PAL.text ; data.put($atrib, $tipo); mat_owl.add("<Declaration> \n <DataProperty IRI=\"#"+$atrib+"\"/>" + "\n</Declaration>");})*
+            {conAtribs.put(conceito,str);}
+            
+         ;
 
 individuos: 'individuos' '{'txtpal{if(!ind.contains($txtpal.texto)){
                                         ind.add($txtpal.texto);
@@ -267,7 +286,7 @@ frase :   ligacao (';' ligacao)*
 ligacao 
 @after{
         // Erros de definição.
-        if(!(rel.contains(rel1) || rel1.equals("is-a") || rel1.equals("iof") || rel1.equals("pof") )) System.out.println("Relação não definida: "+rel1);
+        if(!(rel.contains(rel1) || rel1.equals("is-a") || rel1.equals("iof") || rel1.equals("pof") || rel1.equals("subclasse"))) System.out.println("Relação não definida: "+rel1);
         if(!(con.contains(pal1) || ind.contains(pal1) )) System.out.println("Palavra não definida: "+pal1);
         if(!(con.contains(pal2) || ind.contains(pal2) )) System.out.println("Palavra não definida: "+pal2);
         
@@ -386,7 +405,11 @@ relacao returns [String rel]
 
 txtpal returns[String texto, String atrib, String tipo]   
     
-    : TXT {$texto = $TXT.text;} ('['+PAL {$atrib=$PAL.text;} '=' TXT{$tipo = $TXT.text;
+    : TXT {$texto = $TXT.text;
+           }
+                                                ('['+PAL {$atrib=$PAL.text;} '=' TXT{$tipo = $TXT.text;
+                                                                                     if(!conAtribs.containsKey($texto)){
+                                                                                                    System.out.println($texto+ " nao tem atributos");}
                                                                          instAtrib_owl.add("<DataPropertyAssertion> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal1 + 
                                                                          "\"/> \n <Literal datatypeIRI=\"&xsd;" + data.get($atrib) + "\">"+ $tipo.replace("\"","") + "</Literal> \n</DataPropertyAssertion>");
                                                                          
@@ -426,6 +449,8 @@ txtpal returns[String texto, String atrib, String tipo]
                                                                          
                                     
                                     ( ',' +PAL {$atrib=$PAL.text;} '=' TXT{$tipo = $TXT.text;
+                                                                           if(!conAtribs.containsKey($texto)){
+                                                                                                    System.out.println($texto+ " nao tem atributos");}
                                                                            instAtrib_owl.add("<DataPropertyAssertion> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal1 + 
                                                                            "\"/> \n <Literal datatypeIRI=\"&xsd;" +data.get($atrib) +  "\">"+ $tipo.replace("\"","") + "</Literal> \n</DataPropertyAssertion>");
                                                                           
@@ -466,7 +491,10 @@ txtpal returns[String texto, String atrib, String tipo]
                                                                            })* ']')?
       
        
-       | PAL {$texto = $PAL.text;} ('['+PAL {$atrib=$PAL.text;} '=' TXT{$tipo = $TXT.text;
+       | PAL {$texto = $PAL.text;
+                                            } ('['+PAL {$atrib=$PAL.text;} '=' TXT{$tipo = $TXT.text;
+                                                                                   if(!conAtribs.containsKey($texto)){
+                                                                                                    System.out.println($texto+ " nao tem atributos");}
                                                                         instAtrib_owl.add("<DataPropertyAssertion> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal1 + 
                                                                         "\"/> \n <Literal datatypeIRI=\"&xsd;" +data.get($atrib) +  "\">"+ $tipo.replace("\"","") + "</Literal> \n</DataPropertyAssertion>");
                                                                         
@@ -505,6 +533,8 @@ txtpal returns[String texto, String atrib, String tipo]
                                                                          
                                                                         }
                                     ( ',' +PAL {$atrib=$PAL.text;} '=' TXT{$tipo = $TXT.text;
+                                                                           if(!conAtribs.containsKey($texto)){
+                                                                                                    System.out.println($texto+ " nao tem atributos");}
                                                                            instAtrib_owl.add("<DataPropertyAssertion> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal1 
                                                                            + "\"/> \n <Literal datatypeIRI=\"&xsd;" +data.get($atrib) +  "\">"+ $tipo.replace("\"","") + "</Literal> \n</DataPropertyAssertion>");
                                                                            
