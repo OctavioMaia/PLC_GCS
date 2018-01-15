@@ -408,8 +408,12 @@ txtpal returns[String texto, String atrib, String tipo]
     : TXT {$texto = $TXT.text;
            }
                                                 ('['+PAL {$atrib=$PAL.text;} '=' TXT{$tipo = $TXT.text;
-                                                                                     if(!conAtribs.containsKey($texto)){
-                                                                                                    System.out.println($texto+ " nao tem atributos");}
+                                                                                     if(!conAtribs.containsKey($texto)){System.out.println($texto+ " nao tem atributos");}
+                                                                                     else{
+                                                                                          List<String> str = conAtribs.get($texto);
+                                                                                          if(!str.contains($atrib)){
+                                                                                                                  System.out.println("Nome do atributo errado: " +$atrib+ "\tNo indivíduo: " +pal1);
+                                                                                                                  }}
                                                                          instAtrib_owl.add("<DataPropertyAssertion> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal1 + 
                                                                          "\"/> \n <Literal datatypeIRI=\"&xsd;" + data.get($atrib) + "\">"+ $tipo.replace("\"","") + "</Literal> \n</DataPropertyAssertion>");
                                                                          
@@ -449,8 +453,12 @@ txtpal returns[String texto, String atrib, String tipo]
                                                                          
                                     
                                     ( ',' +PAL {$atrib=$PAL.text;} '=' TXT{$tipo = $TXT.text;
-                                                                           if(!conAtribs.containsKey($texto)){
-                                                                                                    System.out.println($texto+ " nao tem atributos");}
+                                                                           if(!conAtribs.containsKey($texto)){System.out.println($texto+ " nao tem atributos");}
+                                                                           else{
+                                                                                          List<String> str = conAtribs.get($texto);
+                                                                                          if(!str.contains($atrib)){
+                                                                                                                  System.out.println("Nome do atributo errado: " +$atrib+ "\tNo indivíduo: " +pal1);
+                                                                                                                  }}
                                                                            instAtrib_owl.add("<DataPropertyAssertion> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal1 + 
                                                                            "\"/> \n <Literal datatypeIRI=\"&xsd;" +data.get($atrib) +  "\">"+ $tipo.replace("\"","") + "</Literal> \n</DataPropertyAssertion>");
                                                                           
@@ -493,8 +501,12 @@ txtpal returns[String texto, String atrib, String tipo]
        
        | PAL {$texto = $PAL.text;
                                             } ('['+PAL {$atrib=$PAL.text;} '=' TXT{$tipo = $TXT.text;
-                                                                                   if(!conAtribs.containsKey($texto)){
-                                                                                                    System.out.println($texto+ " nao tem atributos");}
+                                                                                   if(!conAtribs.containsKey($texto)){System.out.println($texto+ " nao tem atributos");}
+                                                                                   else{
+                                                                                          List<String> str = conAtribs.get($texto);
+                                                                                          if(!str.contains($atrib)){
+                                                                                                                  System.out.println("Nome do atributo errado: " +$atrib+ "\tNo indivíduo: " +pal1);
+                                                                                                                  }}
                                                                         instAtrib_owl.add("<DataPropertyAssertion> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal1 + 
                                                                         "\"/> \n <Literal datatypeIRI=\"&xsd;" +data.get($atrib) +  "\">"+ $tipo.replace("\"","") + "</Literal> \n</DataPropertyAssertion>");
                                                                         
@@ -533,8 +545,12 @@ txtpal returns[String texto, String atrib, String tipo]
                                                                          
                                                                         }
                                     ( ',' +PAL {$atrib=$PAL.text;} '=' TXT{$tipo = $TXT.text;
-                                                                           if(!conAtribs.containsKey($texto)){
-                                                                                                    System.out.println($texto+ " nao tem atributos");}
+                                                                           if(!conAtribs.containsKey($texto)){System.out.println($texto+ " nao tem atributos");}
+                                                                           else{
+                                                                                          List<String> str = conAtribs.get($texto);
+                                                                                          if(!str.contains($atrib)){
+                                                                                                                  System.out.println("Nome do atributo errado: " +$atrib+ "\tNo indivíduo: " +pal1);
+                                                                                                                  }}
                                                                            instAtrib_owl.add("<DataPropertyAssertion> \n <DataProperty IRI=\"#" + $atrib + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal1 
                                                                            + "\"/> \n <Literal datatypeIRI=\"&xsd;" +data.get($atrib) +  "\">"+ $tipo.replace("\"","") + "</Literal> \n</DataPropertyAssertion>");
                                                                            
