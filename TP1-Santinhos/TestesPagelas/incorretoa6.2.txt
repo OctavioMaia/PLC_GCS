@@ -1,0 +1,25 @@
+Ontologia Laundry
+conceitos { Laundry[name:string],
+            Order [material:string, price:float],
+            Item [color:string,price:float],
+            Linen,
+            Cloth [size:int],
+            Client[name:string] }
+individuos { 'order12C', '5aSec', shirt, coat, prh }
+relacoes { receives, owns, contains }
+triplos {
+   %% triplos abstratos
+       Linen =is-a=> Item;
+       Cloth =is-a=> Item;
+        Order =contains=> Item;
+       Laundry =receives=> Order ;
+        Client =owns=> Order;
+    %% triplos concretos; instancias que povoam a ontologia
+             prh =iof=> Client[name='Pedro Rangel Henriques'];
+             shirt =iof=> Cloth[color='white',price='40.00'];    %% falta o atributo size
+             coat =iof=> Cloth[color='blue',price='66.00',size='40'];
+             '5aSec' =iof=> Laundry[nome='5-a-Sec'];     %% nome do atributo errado
+             'order12C' =iof=> Order[material='cotton', price='20.00'];
+             '5aSec' =receives=> 'order12C';
+             prh =owns=> 'order12C'
+}.

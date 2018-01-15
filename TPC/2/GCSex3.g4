@@ -34,6 +34,13 @@ grammar GCSex3;
 
 ontologia 
 @after{   
+       owl.add("<?xml version=\"1.0\"?>\n" +
+               "<!DOCTYPE Ontology[\n" +
+               "\t<!ENTITY xsd \"http://www.w3.org/2001/XMLSchema#\">\n" +
+               "\t<!ENTITY xml \"http://www.w3.org/XML/1998/namespace\">\n" +
+               "\t<!ENTITY rdfs \"http://www.w3.org/2000/01/rdf?schema#\">\n" +
+               "\t<!ENTITY rdf \"http://www.w3.org/1999/02/22?rdf?syntax?ns#\">\n" +
+               "]>\n");
        owl.add("<Ontology>");
        owl.addAll(con_owl);
        owl.addAll(mat_owl);
@@ -55,7 +62,7 @@ ontologia
        }
     
         
-          : 'Ontologia ' PAL {dot.add("digraph "+$PAL.text+ " {");} conceitos individuos relacoes triplos '.'{dot.add("}"); }
+          : 'Ontologia ' PAL {dot.add("digraph "+$PAL.text+ " {");} conceitos individuos? relacoes triplos '.'{dot.add("}"); }
           ;
 conceitos returns [String atrib] 
             : 'conceitos' '{'PAL{if(!con.contains($PAL.text)){
@@ -196,13 +203,17 @@ ligacao
                  
              }
         }
+        if(dot.contains("\""+pal1+"\" -> \""+pal2+"\" [ label = \""+ rel1 +"\" ];")){
+           System.out.println("Erro em: "+pal1+" = "+rel1+" => "+ pal2+"\n"+
+                                    "Este triplo já foi adicionado.\n");                                                                          
+        }
         
        dot.add("\""+pal1+"\" -> \""+pal2+"\" [ label = \""+ rel1 +"\" ];");
        if(rel1.equals("is-a")){
           relh_owl.add("<SubClassOf> \n <Class IRI=\"#" + pal1 + "\"/>" + "\n <Class IRI=\"#" + pal2 + "\"/>" + "\n</SubClassOf>");
        }
        if(rel1.equals("iof")){
-          inst_owl.add("<ClassAssertion> \n <Class IRI=\"#" + pal2 + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal1 + "\"/>" + "\n</ClassAssertion>");
+          inst_owl.add("<ClassAssertion> \n <Class IRI=\"#" + pal1 + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal2 + "\"/>" + "\n</ClassAssertion>");
        }
        if(rel1.equals("owns")| rel1.equals("has") | rel1.equals("pof")){
           instTrip_owl.add("<ObjectPropertyAssertion> \n <ObjectProperty IRI=\"#" + rel1 + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal1 + "\"/>" + "\n <NamedIndividual IRI=\"#" + pal2 + "\"/>"+ "\n</ObjectPropertyAssertion>");
